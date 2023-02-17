@@ -1,0 +1,224 @@
+button {
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px 7px #fea036;
+  transition: all 0.3s ease-in;
+  border: none;
+  display: inline-block;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  color: #837ad9;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 7px 5px #bf1995;
+  background: none;
+  border: 0px;
+  padding: 0px 60px 0px 30px;
+  outline: none;
+}
+
+.background_images {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ticket {
+  background-color: #1f0644;
+}
+.ticket .ticket_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+.ticket .ticket_block .line_1 {
+  padding: 2rem;
+  box-shadow: inset 0px 0px 10px 5px #00a2ff, 0px 0px 10px #00a2ff;
+  border-radius: 10px;
+  flex-basis: 40rem;
+}
+.ticket .ticket_block .line_1 .line_1_top {
+  display: flex;
+  justify-content: space-between;
+}
+.ticket .ticket_block .line_1 .line_1_top .line_heading h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.ticket .ticket_block .line_1 .line_1_top .line_1_btn {
+  display: flex;
+  gap: 1rem;
+}
+.ticket .ticket_block .line_1 .line_1_top .line_1_btn button {
+  box-shadow: inset 0px 0px 5px 3px #00a2ff;
+  font-size: 0.875rem;
+  padding: 9px 20px;
+}
+.ticket .ticket_block .line_1 .top-bar-wrapper {
+  padding: 1rem 0;
+}
+.ticket .ticket_block .line_1 .top-bar-wrapper .numbers {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.ticket .ticket_block .line_1 .top-bar-wrapper .numbers span {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.ticket .ticket_block .line_1 .top-bar-wrapper .top-bar {
+  position: relative;
+}
+.ticket .ticket_block .line_1 .top-bar-wrapper .top-bar .progress-bar {
+  position: absolute;
+  height: 0.5rem;
+  background: #ea842a;
+  border-radius: 50px;
+}
+.ticket .ticket_block .line_1 .top-bar-wrapper .top-bar .main-bar {
+  background: #400a73;
+  height: 0.438rem;
+  width: 100%;
+  border-radius: 50px;
+}
+.ticket .ticket_block .line_1 .draw .Draw_Numbers {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.ticket .ticket_block .line_1 .draw .Draw_Numbers span {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-weight: bold;
+  color: #ffffff;
+}
+.ticket .ticket_block .line_1 .draw .m-border {
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  background: #300a5b;
+  border-radius: 3.125rem;
+  margin-top: 0.438rem;
+}
+.ticket .ticket_block .line_1 .number_list {
+  padding-top: 1rem;
+}
+.ticket .ticket_block .line_1 .number_list span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 5px 3px #00a2ff;
+  margin: 9px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.ticket .ticket_block .line_1 .number_list .active {
+  box-shadow: inset 0px 0px 5px 3px #da7a2d;
+}
+.ticket .ticket_block .my_line .my_lines {
+  background: #3b076b;
+  box-shadow: inset 0px 0px 10px 5px #00a2ff, 0px 0px 10px #00a2ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+.ticket .ticket_block .my_line .my_lines .my_lines_heading {
+  padding: 1rem 0;
+}
+.ticket .ticket_block .my_line .my_lines .my_lines_heading h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.ticket .ticket_block .my_line .my_lines .my_lines_num {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #642b9c;
+  border-bottom: 1px solid #642b9c;
+  margin-bottom: 10px;
+  background: #330662;
+}
+.ticket .ticket_block .my_line .my_lines .my_lines_num .number_list {
+  padding: 1rem 0.5rem;
+}
+.ticket .ticket_block .my_line .my_lines .my_lines_num .number_list::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f2ed";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 1rem;
+}
+.ticket .ticket_block .my_line .my_lines .my_lines_num .number_list span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 5px 3px #da7a2d;
+  margin: 0 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.ticket .ticket_block .my_line .my_lines .my_line_text {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #867cd5;
+}
+.ticket .ticket_block .my_line .my_lines .my_line_text .ticket_pr h3 {
+  color: #ffffff;
+  font-size: 1.375rem;
+}
+.ticket .ticket_block .my_line .my_lines .my_line_text .ticket_pr small {
+  color: #24e980;
+  font-size: 0.938rem;
+}
+.ticket .ticket_block .my_line .my_lines .my_line_text p {
+  color: #ffffff;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+.ticket .ticket_block .my_line .my_lines .total_price {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.ticket .ticket_block .my_line .my_lines .total_price p {
+  font-size: 1.375rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.ticket .ticket_block .my_line .my_lines .my_line_btn {
+  text-align: center;
+}
+.ticket .ticket_block .my_line .my_line_ticket {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}/*# sourceMappingURL=ticket-pages.css.map */

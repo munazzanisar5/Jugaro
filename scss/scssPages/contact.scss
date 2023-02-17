@@ -1,0 +1,160 @@
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+
+
+.contact{
+    background-image: url(/images/contact.png);
+    @extend .background_images;
+    padding: 23.375rem 0;
+}
+
+// contacts
+.contacts{
+    background-image: url(/images/contact-bg.png);
+    background-color: $purple-color-bg;
+    @extend .background_images;
+    .contact_block{
+        background-color: #1f0644;
+        margin-top: -15.625rem;
+        padding: 2.5rem 1.875rem 2.5rem;
+        border-radius: 20px;
+        position: relative;
+        top: -15rem;
+        .contact_heading{
+            text-align: center;
+            padding: 2rem 0;
+            h2{
+                color: $white-color;
+            }
+            
+        }
+        .contact_blocks{
+            display: flex;
+            justify-content: center;
+            gap: 6rem;
+            
+                .contact_left{
+                    border: 1px solid rgba(255, 255, 255, 0.105);
+                    border-radius: 10px;
+                    padding: 2.5rem 1.875rem;
+                    .contact_form{
+                        label{
+                            display: block;
+                            color: $white-color;
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            padding: 1rem 0;
+                        }
+                        input{
+                            box-shadow: inset 0px 0px 4px 2px #00a2ff;
+                            padding: 0px 30px;
+                        }
+                        textarea{
+                            box-shadow: inset 0px 0px 4px 2px #00a2ff;
+                            padding: 0px 30px;
+                            border-radius: 1rem;
+                            background: none;
+                            border: none;
+                            padding: 20px 30px;
+                            color: #837ad9;
+                            outline: none;
+                            width: 100%;
+                            resize: none;
+                        }
+                        .form_bottom{
+                            display: flex;
+                            gap: 0.5rem;
+                            padding: 1rem 0;
+                            input{
+                                border: none;
+                                box-shadow: none;
+                                display: inline-block;
+                                width: 1rem;
+                                height: 1rem;
+                            }
+                            p{
+                                font-size: 0.875rem;
+                                color: $white-color;
+                            }
+                        }
+                        .contact_btn{
+                            padding: 1rem 0;
+                        }
+                       
+                    }
+                }
+                .contact_right{
+                    h3{
+                        color: $white-color;
+                        font-size: 2.1rem;
+                        line-height: 2.5rem;
+                    }
+                    p{
+                        color: $white_blue;
+                        font-size: 1.125rem;
+                        line-height: 2.5rem;
+                    }
+                    small{
+                        color: $white-color;
+                        font-size: 1.125rem;
+                        line-height: 2.5rem;
+                    }
+                    .contact_inf{
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 1rem;
+                        padding: 1rem 0;
+                        .contact_icon{
+                            height: 80px;
+                            width: 80px;
+                            line-height: 80px;
+                            text-align: center;
+                            color: #00a2ff;
+                            font-size: 30px;
+                            box-shadow: inset 0px 0px 10px 7px #00a2ff;
+                            border-radius: 50%;
+                            margin-right: 30px;
+                            
+                            &:nth-child(1){
+                                &::before{
+                                    @include icons($icon: "\f0e0");
+                                    font-family: "Font Awesome 5 Free";
+                                    font-weight: 900;
+                                }
+                            }
+                            &:nth-child(2){
+                                &::before{
+                                    @include icons($icon: "\f095");
+                                    font-family: "Font Awesome 5 Free";
+                                    font-weight: 900;
+                                }
+                               
+                        
+                            }
+                            &:nth-child(3){
+                                &::before{
+                                    @include icons($icon: "\f3c5");
+                                    font-family: "Font Awesome 5 Free";
+                                    font-weight: 900;
+                                }
+                               
+                                
+                            }
+                        }
+                        .contact_text{
+                            h4{
+                                color: $white-color;
+                                font-size: 1.5rem;
+                            }
+                            p{
+                                color: $white_blue;
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}

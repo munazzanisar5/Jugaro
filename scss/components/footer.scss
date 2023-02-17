@@ -1,0 +1,147 @@
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+
+.footer_link_bg{
+    width: 2.188rem;
+    height: 2.188rem;
+    border-radius: 6rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    &:hover{
+        background-color: $yellow_bg;
+    }
+}
+
+.footer{
+    background-image: url(/images/footerbg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #070b28;
+    padding-top: 12rem;
+    text-align: center;
+    .footer_links{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem 0;
+        .facebook{
+            @extend .footer_link_bg;
+            &::before{
+                @include icons($icon: "\f39e");
+            }
+        }
+        .twitter{
+            @extend .footer_link_bg;
+            &::before{
+                @include icons($icon: "\f099");
+            }
+        }
+        .printest{
+            @extend .footer_link_bg;
+            &::before{
+                @include icons($icon: "\f231");
+            }
+        }
+        .indeed{
+            @extend .footer_link_bg;
+            &::before{
+                @include icons($icon: "\f0e1");
+            }
+        }
+        .instagram{
+            @extend .footer_link_bg;
+            &::before{
+                @include icons($icon: "\f16d");
+            }
+        }
+    }
+    .footer_menu{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        padding: 8rem 0 2rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        a{
+            color: $white-color;
+            font-size: 1.125rem;
+            font-weight: bold;
+            line-height: 1.75rem;
+            border-left: 2px solid $border_lit_blue;
+            padding-left: 2rem;
+            &:nth-child(1){
+                border-left: none;
+            }
+        }
+      
+    }
+    .footer_bottom{
+        p{
+            color: $white-color;
+        font-size: 1.125rem;
+        font-weight: bold;
+        line-height: 1.75rem;
+        padding: 1.5rem 0;
+        }
+    }
+
+
+}
+
+.subscribe{
+    background-color: $purple-color-bg;
+   
+    .subscribe_block{
+     
+        background-image: url(/images/newsletter.jpg);
+        @extend .background_images;
+    padding: 53px 30px 60px;
+    box-shadow: inset 0px 0px 10px 7px #00a2ff;
+    border-radius: 30px;
+    position: relative;
+    bottom: -120px;
+    z-index: 1;
+    overflow: hidden;
+    .subscribe_imges{
+        .left_img{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            z-index: 1;
+        }
+        .right_img{
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            z-index: 1;
+        }
+        .subscribe_heading{
+            text-align: center;
+            p{
+                color: $pink-color;
+                font-size: 1.3rem;
+                font-weight: 700;
+                padding: 1rem 0;
+            }
+            h4{
+                color: $white-color;
+                font-size: 2rem;
+            }
+        }
+        .subscribe_input{
+            padding: 2rem 20rem;
+            width: 100%;
+            position: relative;
+            button{
+                position: absolute;
+                top: 29%;
+                right: 28.2%;
+            }
+        }
+    }
+    
+       
+    }
+}

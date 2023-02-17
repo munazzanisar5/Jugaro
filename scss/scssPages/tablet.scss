@@ -1,0 +1,619 @@
+@import "./home.scss";
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+@import "../components/footer.scss";
+@import "./turnments.scss";
+@import "./bones.scss";
+@import "./games_details.scss";
+@import "./reffles.scss";
+@import "./ticket-pages.scss";
+@import "./help.scss";
+@import "./404.scss";
+@import "./about.scss";
+@import "./raffles-details.scss";
+@import "./games.scss";
+@import "./tournment2.scss";
+@import "./gamer-profile-private.scss";
+@import "./gamer-profile.scss";
+@import "./gamer-menu.scss";
+@import "./contact.scss";
+
+
+@media (max-width: 992px) {
+    .header {
+        display: none;
+    }
+
+    .mobile_navbar{
+        display: block !important;
+    }
+
+    .rewards {
+        .reward {
+            .rewards_img {
+                width: 100% !important;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .daily {
+        .daily_prize {
+            justify-content: space-evenly;
+
+            .daily_prize_card:nth-child(1),
+            .daily_prize_card:nth-child(2) {
+                border-right: none !important;
+                padding-right: 0 !important;
+            }
+
+            .daily_prize_card {
+                .prize_card_img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .play {
+        .play_images {
+
+            .left_img,
+            .right_img {
+                display: none;
+            }
+
+            .play_games_block {
+                justify-content: space-evenly !important;
+                flex-wrap: wrap;
+                gap: 2rem;
+                .play_game_card {
+                    width: 42%;
+                }
+            }
+        }
+    }
+
+    .leadboard {
+        .champians {
+            
+            justify-content: space-evenly;
+            .champians_block {
+                
+                text-align: center;
+                .champian_text{
+                    h2{
+                        font-size: 2.125rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .leadboard {
+        .champina_details_block {
+            @include flex_direction_mobile;
+
+            .champians_detail {
+                width: 90%;
+
+            }
+        }
+    }
+
+    // .winner {
+    //     .winner_img {
+    //         @include flex_direction_mobile;
+
+    //         img {
+    //             width: 100%;
+    //         }
+
+    //         .winner_text {
+    //             position: static;
+    //             text-align: center;
+    //             margin: 0 2rem
+    //         }
+    //     }
+    // }
+
+    .smartly {
+        .smartly_block {
+            justify-content: space-evenly;
+        }
+    }
+
+    .subscribe {
+        .subscribe_block {
+            width: 90%;
+
+            .subscribe_imges {
+
+                .left_img,
+                .right_img {
+                    display: none;
+                }
+                 .subscribe_input {
+                    padding: 2rem !important;
+                    button{
+                        right: 4.2% !important;
+                    }
+                }
+
+               
+            }
+        }
+    }
+
+    // About
+    .about_product{
+        padding: 10rem 2rem !important;
+
+    }
+
+    .favorite_games {
+        .favourite{
+            .favorite_games_block{
+                padding: 0 2rem;
+                .favourit_text {
+                    width: 100% !important;
+                }
+            } 
+        }
+    }
+
+    .amazing {
+        .amazing_block{
+            flex-wrap: wrap;
+            .amazing_card{
+                width: 20rem;
+            }
+        }
+    }
+
+    .daily_prized {
+        .daily_prized_block {
+            justify-content: center !important;
+            flex-wrap: wrap;
+        }
+    }
+
+    .expert {
+        .expert_team {
+            .expert_team_member{
+                justify-content: center !important;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+        }
+    }
+
+    // gamer profile
+    .profile_private {
+       
+        .profile_private_menu {
+            justify-content: center !important;
+        }
+        .private_profile{
+            @include flex_direction_mobile;
+             .private_profile_detail{
+                @include flex_direction_mobile;
+             }
+             .rank_right{
+                padding: 2rem 0 !important;
+             }
+        }
+    }
+
+    .raffles {
+        .raffles_content{
+            @include flex_direction_mobile;
+            .online_member_block{
+                
+                flex-basis: 100%;
+            }
+        }
+    }
+
+
+    .online_player {
+        .online_player_block{
+            @include flex_direction_mobile;
+           
+        }
+    }
+
+
+    .overview{
+        .overview_block{
+            @include flex_direction_mobile;
+            .overview_left {
+                width: 100% !important;
+                .about_me , .rank , .achievements{
+                    width: 90%;
+                    margin: 2rem auto !important;
+                }
+            }
+        }
+    }
+
+    .overview {
+        .overview_block {
+            .overview_right {
+                width: 90%;
+                flex-basis: 100% !important;
+                
+            }
+        }
+    }
+
+// bounse
+.bonuses {
+    .bonuses_content {
+        .bonuses_heading{
+            h2{
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+.bonuses_card_bg {
+    .bounses_card_block{
+        justify-content: center !important;
+        flex-wrap: wrap;
+        gap: 2rem;
+        text-align: center;
+        .bonuses_card {
+            flex-basis: 20rem;
+            
+        }
+    }
+}
+
+.get_bonuse_bg {
+    .get_bonuse {
+        .get_bonuse_card{
+            
+        }
+    }
+}
+
+.question {
+    .question_block{
+        @include flex_direction_mobile;
+       .question_img{
+        flex-basis:100% !important;
+        width: 90%;
+       }
+       .question_content {
+        width: 90%;
+        flex-basis: 100% !important;
+        
+       }
+    }
+}
+
+
+// contact
+.contacts {
+    .contact_block {
+        width: 90%;
+        .contact_blocks{
+            @include flex_direction_mobile;
+            .contact_left , .contact_right{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+    // raffles
+    // .single_product {
+    //     .single_product_heading{
+    //         text-align: center
+    //     }
+    //     .single_product_menu{
+    //         @include flex_direction_mobile;
+    //         text-align: center;
+    //     }
+    // }
+    
+    .raffles {
+        .raffles_content {
+            @include flex_direction_mobile;
+        }
+        .raffles_input {
+            flex-basis: 100% !important; 
+            width: 90%;
+            
+        }
+        .raffles_dropdown{
+            flex-basis: 100% !important; 
+           
+            
+        }
+    }
+
+    .product_ending {
+        .product_ending_block{
+            @include flex_direction_mobile;
+            .product_cards {
+                flex-basis: 100%;
+                width: 100%;
+                
+            }
+        }
+    }
+
+    .product_ending {
+        .product_ending_block {
+            .recent_winner {
+                text-align: center;
+                
+                
+                .discount_card{
+                    width: 90%;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                       
+                    }
+                }
+               
+                
+            }
+            .product_cards {
+                .ending_product_card{
+                    justify-content: center !important;
+                    gap: 2rem !important;
+                }
+            }
+        }
+
+    }
+
+          // raffles details
+
+    .single_product {
+        .single_product_heading {
+            padding: 2rem !important;
+        }
+        .single_product_menu{
+            padding: 0 2rem;
+        }
+    }
+    .jetblack {
+        .jectblack_block{
+            @include flex_direction_mobile;
+             .jetblock_images{
+                .jetblack_img{
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+                .jetblack_product{
+                    justify-content: center !important;
+                   width: 15% !important;
+                   margin: 0 auto;
+                }
+             }
+            .jectblack_right {
+                .jetblack_details{
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+                .product_feature{
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .hyperX {
+        .hyper {
+            width: 90% !important;
+                    margin: 0 auto;
+            p{
+                padding: 2rem 0 0 0 !important;
+            }
+        }
+    }
+
+    
+     // ticket
+     .ticket{
+        .ticket_block{
+            @include flex_direction_mobile;
+            .line_1{
+                width: 90%;
+                margin: 0 auto;
+                .line_1_top{
+                    @include flex_direction_mobile;
+                    .line_1_btn{
+                        @include flex_direction_mobile;
+                    }
+                }
+            }
+            .my_line{
+                width: 90%;
+                margin: 0 auto;
+                .my_line_ticket{
+                    width: 100%;
+                    gap: 2rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+     // tournment2
+     .tournment_two {
+        .tournment_two_members{
+            flex-wrap: wrap;
+            justify-content: center !important;
+            gap: 2rem !important;
+        }
+    }
+
+    .background_tournment {
+        border: none !important;
+        .browsere_tournment {
+            .browser_tour_heading{
+                text-align: center
+            }
+            .browsers_tour{
+                @include flex_direction_mobile;
+                .brower_button{
+                    @include flex_direction_mobile;
+                }
+            }
+        }
+    }
+    
+    .Tournaments {
+        .touenament_block{
+            width: 90%;
+            margin: 0 auto;
+            @include flex_direction_mobile;
+             .card_tournment {
+                text-align: center;
+                .rank_members{
+                    justify-content: center !important;
+                }
+             }
+           .tournment_content {
+            .tournment_team_info{
+                width: 90%;
+                @include flex_direction_mobile;
+                .tournment_2_img {
+                   width: 100%;
+                   img{
+                    width: 100%;
+                   }
+                }
+                
+            }
+           }
+        }
+    }
+      
+     // tournment
+     .Tournament{
+        .touenament_block{
+            width: 90%;
+            margin: 0 auto;
+            @include flex_direction_mobile;
+           
+        }
+        .tournment_bottom{
+            width: 90%;
+            margin: 0 auto;
+            @include flex_direction_mobile;
+           
+        }
+    }
+
+    .prize {
+        .prize_heading{
+            text-align: center
+        }
+        .prize_cup{
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .prize_content{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+     // help
+     .help {
+        .help_heading{
+            padding-left: 2rem !important;
+        }
+        .help_menu{
+            padding-left: 2rem;
+        }
+       
+    }
+    .agreement {
+        .agrement_block{
+            @include flex_direction_mobile;
+            margin: 0 auto;
+            width: 90%;
+        }
+    }
+
+    // achievements
+    .overview {
+        .block_overview {
+            .over_view_achieve {
+                width: 90%;
+                margin: 0 auto;
+                .achivement_bdg{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 2rem;
+                }
+            }
+        }
+    }
+
+     // statistics
+     .statistics {
+        .statistics_block{
+            @include flex_direction_mobile;
+            .statistics_right{
+                width: 90%;
+                margin: 0 auto;
+                .statistics_image{
+                   
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+     // friends
+     .friendz {
+        .friendz_top{
+           width: 90%;
+           margin: 0 auto;  
+        }
+    }
+     .friendz {
+        .friendz_block{
+            @include flex_direction_mobile;
+            .friendz_add{
+               
+                flex: 0 !important;
+            }
+        }
+    }
+     // 404
+     .page_not_found {
+        .page_not_found_image{
+            width: 100% !important;
+        }
+    }
+  
+}

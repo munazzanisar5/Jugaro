@@ -1,0 +1,482 @@
+button {
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px 7px #fea036;
+  transition: all 0.3s ease-in;
+  border: none;
+  display: inline-block;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  color: #837ad9;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 7px 5px #bf1995;
+  background: none;
+  border: 0px;
+  padding: 0px 60px 0px 30px;
+  outline: none;
+}
+
+.background_images, .profile_private {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile_private {
+  background-image: url(/images/user-profile.jpg);
+  padding-top: 7rem;
+}
+.profile_private .profile_private_heading {
+  padding: 2rem 0;
+}
+.profile_private .profile_private_heading h2 {
+  font-size: 5rem;
+  color: #ffffff;
+}
+.profile_private .profile_private_menu {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+.profile_private .profile_private_menu p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.profile_private .private_profile {
+  display: flex;
+  justify-content: space-between;
+}
+.profile_private .private_profile .private_profile_detail {
+  display: flex;
+  gap: 3rem;
+}
+.profile_private .private_profile .private_profile_detail .private_detail_img {
+  position: relative;
+  top: 6rem;
+}
+.profile_private .private_profile .private_profile_detail .private_detail_img .image {
+  box-shadow: inset 0px 0px 7px 4px #00a2ff;
+  padding: 1.2rem;
+  border-radius: 6rem;
+}
+.profile_private .private_profile .private_profile_detail .private_detail_img .bottom_img {
+  position: relative;
+  text-align: center;
+}
+.profile_private .private_profile .private_profile_detail .private_detail_img .bottom_img img {
+  position: absolute;
+  top: -3rem;
+  left: 4.4rem;
+  z-index: 1;
+}
+.profile_private .private_profile .private_profile_detail .private_detail_img .bottom_img h3 {
+  z-index: 2;
+  position: absolute;
+  top: -2rem;
+  left: 5.6rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.profile_private .private_profile .private_profile_detail .private_detail_text {
+  padding-top: 6rem;
+}
+.profile_private .private_profile .private_profile_detail .private_detail_text h3 {
+  color: #ffffff;
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+.profile_private .private_profile .private_profile_detail .private_detail_text p {
+  color: #ada6e7;
+  font-size: 1.125rem;
+}
+.profile_private .private_profile .rank_right {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-top: 6rem;
+}
+.profile_private .private_profile .rank_right .rank_right_txt small {
+  color: #ffffff;
+}
+.profile_private .private_profile .rank_right .rank_right_txt h4 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.profile_private .private_profile .rank_right .rank_members {
+  display: flex;
+}
+.profile_private .private_profile .rank_right .rank_members a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #364374;
+  border-radius: 50%;
+  margin-right: -15px;
+}
+.profile_private .private_profile .rank_right .rank_members a img {
+  width: 100%;
+  object-fit: cover;
+}
+.profile_private .private_profile .rank_right .rank_members a:nth-child(5) {
+  padding: 1rem;
+  color: #ada6e7;
+  background-color: #300983;
+  box-shadow: inset 0px 0px 7px 3px #9a13d2;
+}
+
+.online_member_block {
+  flex-basis: 55rem;
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+}
+.online_member_block .online_member_detail {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #1d0f42;
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+}
+.online_member_block .online_member_detail .member_match_img {
+  padding-top: 0.5rem;
+}
+.online_member_block .online_member_detail .member_match_text h4 {
+  padding: 0 0 0.3rem 0;
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.online_member_block .online_member_detail .member_match_text small {
+  font-size: 0.75rem;
+  color: #ada6e7;
+}
+
+.online_member_btn {
+  padding: 1rem 0;
+}
+.online_member_btn button {
+  color: #b7afff;
+  font-size: 1.125rem;
+  padding: 15px 45px;
+  border-radius: 6rem;
+  box-shadow: inset 0px 0px 7px 5px #00a2ff;
+  flex-basis: 20rem;
+  text-transform: capitalize;
+}
+.online_member_btn button img {
+  padding-right: 0.3rem;
+}
+
+.online_player {
+  background: #23074e;
+  border-bottom: 1px solid #330676;
+  padding: 2rem 0;
+}
+.online_player .online_player_block {
+  display: flex;
+  justify-content: space-between;
+}
+.online_player .online_player_block .online_player_menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.online_player .online_player_block .online_player_menu a {
+  padding: 0.5rem 0;
+  color: #9d8fca;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.online_player .online_player_block .online_player_menu a:hover {
+  color: #ffffff;
+}
+.online_player .online_player_block .online_player_btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.online_player .online_player_block .online_player_btn button {
+  color: #b7afff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  box-shadow: inset 0px 0px 6px 4px #00a2ff;
+  padding: 7px 25px;
+  transition: all 0.3s ease-in;
+}
+.online_player .online_player_block .online_player_btn button:nth-child(1) {
+  box-shadow: inset 0px 0px 6px 4px #fea036;
+}
+.online_player .online_player_block .online_player_btn button:nth-child(1)::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f126";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 0.4rem;
+  color: #b7afff;
+}
+.online_player .online_player_block .online_player_btn button:nth-child(2):hover {
+  box-shadow: inset 0px 0px 6px 4px #fea036;
+}
+.online_player .online_player_block .online_player_btn button:nth-child(2)::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f555";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 0.4rem;
+  color: #b7afff;
+}
+.online_player .online_player_block .online_player_btn button:nth-child(3):hover {
+  box-shadow: inset 0px 0px 6px 4px #fea036;
+}
+.online_player .online_player_block .online_player_btn button:nth-child(3)::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f013";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 0.4rem;
+  color: #b7afff;
+}
+
+.affiliate {
+  background-color: #1f0644;
+  padding: 3rem 0;
+}
+.affiliate .affiliate_program {
+  border: 1px solid #0a6ec1;
+  border-radius: 0.625rem;
+  padding: 2rem;
+}
+.affiliate .affiliate_program .affilite_heading h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.affiliate .affiliate_program .affilite_heading p {
+  padding: 1rem 0;
+  color: #ada6e7;
+  font-size: 1.125rem;
+}
+.affiliate .affiliate_program .referral_link {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  background: #1c063e;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.875rem;
+}
+.affiliate .affiliate_program .referral_link .referral_left {
+  flex-basis: 40rem;
+}
+.affiliate .affiliate_program .referral_link .referral_left .referral_heading h4 {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.affiliate .affiliate_program .referral_link .referral_left .referral_input {
+  padding: 2rem 0;
+}
+.affiliate .affiliate_program .referral_link .referral_left .referral_input input {
+  width: 100%;
+  background: #250e46;
+  color: #fff;
+  height: 50px;
+  padding: 0px 45px 0px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  border-radius: 10px;
+  position: relative;
+}
+.affiliate .affiliate_program .referral_link .referral_left .referral_input input::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f15b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+.affiliate .affiliate_program .referral_link .referral_right .referral_heading h4 {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.affiliate .affiliate_program .referral_link .referral_right .footer_links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+.affiliate .affiliate_program .referral_link .referral_right .footer_links .facebook::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f39e";
+}
+.affiliate .affiliate_program .referral_link .referral_right .footer_links .twitter::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+}
+.affiliate .affiliate_program .referral_link .referral_right .footer_links .indeed::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e1";
+}
+.affiliate .affiliate_program .referral_link .referral_right .footer_links .instagram::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+}
+.affiliate .affiliate_program .earned_referral {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #250d52;
+  padding: 2rem;
+  border-radius: 0.625rem;
+}
+.affiliate .affiliate_program .earned_referral .earned {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 0.625rem;
+  background: #2d1767;
+  padding: 2rem;
+}
+.affiliate .affiliate_program .earned_referral .earned .earned_text h3 {
+  font-size: 1.375rem;
+  color: #ffffff;
+}
+.affiliate .affiliate_program .earned_referral .earned .earned_text p {
+  font-size: 1.125rem;
+  color: #ada6e7;
+}
+.affiliate .affiliate_program .referral_history {
+  background: #250d52;
+  padding: 2rem;
+  border-radius: 0.625rem;
+}
+.affiliate .affiliate_program .referral_history .referral_header {
+  display: flex;
+  justify-content: space-between;
+}
+.affiliate .affiliate_program .referral_history .referral_header h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.affiliate .affiliate_program .referral_history .referral_header .date {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: 1px solid #513d75;
+}
+.affiliate .affiliate_program .referral_history .referral_header .date p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.affiliate .affiliate_program .referral_history .referral_header .date p::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f133";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 1.5rem;
+}
+.affiliate .affiliate_program .referral_history .table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  color: #ffffff;
+}
+.affiliate .affiliate_program .referral_history .table-responsive tbody {
+  background: #26084a;
+  color: #ffffff;
+}
+.affiliate .affiliate_program .referral_history .table-responsive .table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+.affiliate .affiliate_program .referral_history .table-responsive .table thead th {
+  padding: 10px 0;
+  border-bottom: 1px solid #4a3890;
+}
+.affiliate .affiliate_program .referral_history .table-responsive .table tbody tr {
+  background: #29125d;
+  border-top: 1px solid #4a3890;
+}
+.affiliate .affiliate_program .referral_history .table-responsive .table tbody tr td {
+  padding: 10px 0;
+  border-bottom: 1px solid #4a3890;
+  text-align: center;
+}
+.affiliate .affiliate_program .referral_history .referral_history_btn {
+  text-align: center;
+}
+.affiliate .affiliate_program .referral_history .referral_history_btn a {
+  color: #ada6e7;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.affiliate .affiliate_program .referral_history .referral_history_btn a::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 0.5rem;
+  color: #ada6e7;
+}
+
+.footer_bg, .affiliate .affiliate_program .referral_link .referral_right .footer_links .facebook, .affiliate .affiliate_program .referral_link .referral_right .footer_links .twitter, .affiliate .affiliate_program .referral_link .referral_right .footer_links .indeed, .affiliate .affiliate_program .referral_link .referral_right .footer_links .instagram {
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 6rem;
+  text-align: center;
+  padding-top: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer_bg:hover, .affiliate .affiliate_program .referral_link .referral_right .footer_links .facebook:hover, .affiliate .affiliate_program .referral_link .referral_right .footer_links .twitter:hover, .affiliate .affiliate_program .referral_link .referral_right .footer_links .indeed:hover, .affiliate .affiliate_program .referral_link .referral_right .footer_links .instagram:hover {
+  background-color: #f7b230;
+}/*# sourceMappingURL=gamer-profile-private.css.map */

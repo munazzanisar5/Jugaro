@@ -1,0 +1,169 @@
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+
+
+// friends
+.friendz{
+    background-color: $purple-color-bg;
+    
+    padding: 3rem 0;
+    .friendz_top{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        .friendz_heading{
+            h2{
+                color: $white-color;
+                font-size: 2rem;
+            }
+        }
+        .friendz_input{
+            flex-basis: 18rem;
+            position: relative;
+            button{
+                position: absolute;
+                top: 0;
+                right: -0.688rem;
+                box-shadow: none;
+                &::before {
+                    content: "\f002";
+                    color: #837ad9;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    .friendz_block{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        .friendz_add{
+            flex-basis: 36.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 0.625rem;
+            border: 1px solid #4c3869;
+                .friendz_profile_img{
+                    .image{
+                        width: 105px;
+                        height: 105px;
+                        border-radius: 50%;
+                        padding: 10px;
+                        position: relative;
+                        box-shadow: inset 0px 0px 6px 3px #00a2ff;
+                    }
+                    .bottom_img {
+                        position: relative;
+                        text-align: center;
+                        img {
+                            position: absolute;
+                            top: -1.8rem;
+                            left: 2.4rem;
+                            z-index: 1;
+                        }
+                        h3 {
+                            z-index: 2;
+                            position: absolute;
+                            top: -1.4rem;
+                            left: 3rem;
+                            color: #ffffff;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .friendz_info{
+                    h3{
+                        font-size: 1.125rem;
+                        color: $white-color;
+                    }
+                    p{
+                        font-size: 0.875rem;
+                        color: $white_blue;
+                    }
+                }
+                .friendz_btn{
+                    button{
+                        font-size: 13px;
+                        color: #b7afff;
+                        box-shadow: inset 0px 0px 6px 3px #00a2ff;
+                        padding: 10px 25px
+                    }
+                }
+        }
+    }
+    .friendz_button{
+        text-align: center;
+        padding: 2rem 0;
+            button{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.25rem;
+                color: $white-color;
+                padding: 12px 35px;
+                border-radius: 3rem;
+                box-shadow: inset 0px 0px 10px 7px #00a2ff;
+                transition: all 0.3s ease-in;
+              
+        }
+    }
+
+}
+
+// statistics
+.statistics{
+    background-color: $purple-color-bg;
+    .statistics_block{
+        display: flex;
+        padding: 3rem 0;
+        justify-content: flex-start;
+        gap: 3rem;
+        .statistics_left{
+           
+            .statistics_cards{
+                background: #360978;
+                box-shadow: inset 0px 0px 5px 4px #00a2ff;
+                padding: 1.563rem 1.875rem 1.563rem;
+                border-radius: 0.75rem;
+                margin-bottom: 1.875rem;
+                display: flex;
+            .statistics_text{
+                h3{
+                    color: $white-color;
+                    font-size: 1.5rem;
+                }
+                small{
+                    padding: 1rem 0;
+                    color: $white_blue;
+                    font-size: 1rem;
+                }
+            }
+        }
+        }
+        .statistics_right{
+            background: #330676;
+            padding: 0 1rem;
+            .statistics_top_btn{
+                background: #330676;
+                padding: 1.5rem 0;
+               
+                a{
+                    padding: 0.5rem;
+                    background: #330676;
+                    color: $white-color;
+                    border: 1px solid #0062cc;
+                    margin: -3px;
+                    &:nth-child(2){
+                        background: #0062cc;
+                    }
+                }
+            }
+        }
+    }
+}

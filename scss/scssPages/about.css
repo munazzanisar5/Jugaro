@@ -1,0 +1,322 @@
+button {
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px 7px #fea036;
+  transition: all 0.3s ease-in;
+  border: none;
+  display: inline-block;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  color: #837ad9;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 7px 5px #bf1995;
+  background: none;
+  border: 0px;
+  padding: 0px 60px 0px 30px;
+  outline: none;
+}
+
+.background_images, .comunity, .expert, .amazing, .about_product {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about_product {
+  background-image: url(/images/about-bc.jpg);
+  padding: 10rem 0;
+}
+.about_product .about_product_heading {
+  padding: 2rem 0;
+}
+.about_product .about_product_heading h2 {
+  font-size: 5rem;
+  color: #ffffff;
+}
+.about_product .about_product_menu {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+.about_product .about_product_menu p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.favorite_games {
+  background-color: #0b122e;
+  background-image: url(/images/s1.png);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.favorite_games .about_images {
+  background-image: url(/images/right-image.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -2;
+  top: 7rem;
+  right: 0;
+  width: 22rem;
+}
+.favorite_games .about_images img {
+  width: 100%;
+  margin: -7.813rem auto;
+}
+.favorite_games .favourite {
+  padding: 112px 0px 120px;
+}
+.favorite_games .favourite .favorite_games_block .favourit_text {
+  width: 50%;
+}
+.favorite_games .favourite .favorite_games_block .favourit_text p {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #fa009f;
+}
+.favorite_games .favourite .favorite_games_block .favourit_text h2 {
+  color: #ffffff;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.favorite_games .favourite .favorite_games_block .favourit_text small {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.favorite_games .favourite .favorite_games_block .VIP_players {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.favorite_games .favourite .favorite_games_block .VIP_players .VIP_block {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.favorite_games .favourite .favorite_games_block .VIP_players .VIP_block .VIP_text {
+  font-size: 18px;
+  color: #a1aed4;
+}
+
+.amazing {
+  padding: 120px 0px 120px;
+  background-image: url(/images/featurebg.png);
+  position: relative;
+}
+.amazing .amazing_left {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  max-height: 750px;
+  z-index: 1;
+}
+.amazing .amazing_right {
+  position: absolute;
+  right: 0px;
+  top: 2rem;
+  bottom: 0px;
+  max-height: 750px;
+  z-index: 1;
+}
+.amazing .amazing_text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.amazing .amazing_text p {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #fa009f;
+}
+.amazing .amazing_text h2 {
+  color: #ffffff;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.amazing .amazing_text small {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.amazing .amazing_block {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.amazing .amazing_block .amazing_card {
+  box-shadow: inset 0px 0px 10px 5px #00a2ff, 0px 0px 10px #00a2ff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.amazing .amazing_block .amazing_card .amazing_txt h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.amazing .amazing_block .amazing_card .amazing_txt p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #dbdcf7;
+}
+
+.daily_prized {
+  background-color: #1f0644;
+}
+.daily_prized .daily_prized_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0;
+}
+.daily_prized .daily_prized_block .daily_prized_card {
+  position: relative;
+}
+.daily_prized .daily_prized_block .daily_prized_card .prized_card_text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.daily_prized .daily_prized_block .daily_prized_card .prized_card_text h2 {
+  text-shadow: 0px 0px 20px #00a2ff;
+  color: #00a2ff;
+}
+.daily_prized .daily_prized_block .daily_prized_card .prized_card_text p {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.expert {
+  background-image: url(/images/team-section-bg.jpg);
+}
+.expert .expert_team .expert_team_text {
+  text-align: center;
+}
+.expert .expert_team .expert_team_text p {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #fa009f;
+}
+.expert .expert_team .expert_team_text h2 {
+  color: #ffffff;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.expert .expert_team .expert_team_text small {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.expert .expert_team .expert_team_member {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+.expert .expert_team .expert_team_member .expert_team_card {
+  position: relative;
+}
+.expert .expert_team .expert_team_member .expert_team_card .expert_team_img {
+  position: relative;
+}
+.expert .expert_team .expert_team_member .expert_team_card .expert_team_img .shape {
+  width: 100%;
+}
+.expert .expert_team .expert_team_member .expert_team_card .expert_team_img .member {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.expert .expert_team .expert_team_member .expert_team_card .member_link {
+  position: absolute;
+  bottom: 96px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  right: 20%;
+  border-radius: 50%;
+  background-image: linear-gradient(0deg, #e2906e 0%, #e83a99 100%);
+}
+.expert .expert_team .expert_team_member .expert_team_card .member_link a::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+}
+.expert .expert_team .expert_team_member .expert_team_card p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  bottom: 1.4rem;
+}
+
+.comunity {
+  padding: 40px 0px 0px;
+  background-color: #1f0644;
+  background-image: url(/images/joinus-bg3.png);
+  position: relative;
+  overflow: hidden;
+}
+.comunity .community_jugaro {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5rem 0;
+}
+.comunity .community_jugaro .jugaro_content .jugaro_text {
+  padding: 2rem 0;
+}
+.comunity .community_jugaro .jugaro_content .jugaro_text h2 {
+  font-size: 3.75rem;
+  padding: 2rem 4rem 1rem 0;
+  color: #ffffff;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px -3px 10px rgba(12, 19, 55, 0.7);
+}
+.comunity .community_jugaro .jugaro_content .jugaro_text p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,239 @@
+@import "./home.scss";
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+@import "../components/footer.scss";
+@import "./turnments.scss";
+@import "./bones.scss";
+@import "./games_details.scss";
+@import "./reffles.scss";
+@import "./ticket-pages.scss";
+@import "./help.scss";
+@import "./404.scss";
+@import "./about.scss";
+@import "./raffles-details.scss";
+@import "./games.scss";
+@import "./tournment2.scss";
+@import "./gamer-profile-private.scss";
+@import "./gamer-profile.scss";
+@import "./gamer-menu.scss";
+@import "./contact.scss";
+
+
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media (max-width: 1024px) {
+       .container{
+        max-width: 960px !important;
+       }
+    //    home
+    .rewards {
+        .reward {
+            .rewards_img{
+                width: 56%;
+            }
+        }
+    }
+    .daily {
+        .daily_prize{
+            justify-content: space-evenly;
+        }
+    }
+
+    .play {
+        .play_images {
+            .play_games_block {
+                .play_game_card{
+                    padding: 2.5rem 0.25rem;
+                }
+            }
+        }
+    }
+
+    .leadboard {
+        .champians{
+            gap: 1rem;
+            .champians_block{
+                gap: 1rem;
+                padding: 0;
+            }
+        }
+    }
+
+    .leadboard {
+        .champina_details_block {
+            .champians_detail {
+                .champians_levels{
+                    gap: 1rem !important;
+                }
+            }
+        }
+    }
+    
+    // about
+    .daily_prized {
+        .daily_prized_block {
+            .daily_prized_card{
+                .prized_card_img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .expert {
+        .expert_team{
+            .expert_team_member{
+                gap: 2rem;
+                .expert_team_card {
+                    .expert_team_img {
+                        .member{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // bonuse
+    .bonuses_card_bg {
+        .bounses_card_block {
+            .bonuses_card{
+                padding: 2rem 1rem !important;
+            }
+        }
+    }
+    .question {
+        .question_block{
+            gap: 2rem;
+        }
+    }
+
+    // friends
+    .friendz {
+        .friendz_block {
+            .friendz_add {
+                flex-basis: 29rem;
+            }
+        }
+    }
+
+    // gamer-profile
+    .overview {
+        .overview_block{
+            gap: 1.5rem;
+        }
+    }
+
+    // games
+    .play {
+        .play_images {
+            .play_block {
+                .play_games_block {
+                    .play_game_card{
+                        padding: 2.5rem 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .club_bottom {
+        .club_botom {
+            .club_right {
+                flex-basis: 27rem;
+            }
+        }
+    }
+
+    // help
+    .agreement {
+        .agrement_block{
+            gap: 2rem;
+        }
+    }
+
+    // raffles-details
+    .product_ending{
+        .product_ending_block {
+            gap: 1rem !important;
+            .product_cards {
+                .ending_product_card{
+                    gap: 1rem !important;
+                    .product_ending_cards{
+                        .card_top{
+                            padding: 2rem 1rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // raffle
+    .jetblack {
+        .jectblack_block{
+            gap: 2rem;
+        }
+    }
+
+    .statistics {
+        .statistics_block {
+            .statistics_right {
+                .statistics_image{
+                    width: 84%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // tournment2
+    .Tournaments {
+        .touenament_block {
+            .tournment_content {
+                .tournment_team_info {
+                    .tournment_2_prize{
+                        .tournement_center{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    // tournment
+    .prize {
+        .prize_cup{
+            gap: 2rem;
+            .cup{
+                .prizecup_img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+            
+    }

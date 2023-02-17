@@ -1,0 +1,274 @@
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+
+
+
+.tournment_2{
+    background-image: url(/images/turnament.png);
+    @extend .background_images;
+    height: 36.875rem;
+    padding: 0px;
+
+}
+
+// tournment_two
+.tournment_two{
+    background-image: url(/images/counter-bg.jpg);
+    @extend .background_images;
+    box-shadow: inset 0px 15px 15px -10px #00a2ff, inset 0px -15px 15px -10px #00a2ff;
+    .tournment_two_members{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+            .member_blok{
+                .tournment_member_img{
+                    img{
+                        border-radius: 6rem;
+                        box-shadow: inset 0px 0px 4px 2px #00a2ff;
+                        background: #270b59;
+                        padding: 14px;
+                    }
+                }
+                .member_money{
+                    position: relative;
+                    h3{
+                        position: absolute;
+                        font-size: 1rem;
+                        display: inline-block;
+                        box-shadow: inset 0px 0px 4px 3px #fea036;
+                        padding: 1px 10px;
+                        border-radius: 6rem;
+                        color: #fff;
+                        bottom: 0px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: #620782;
+                    }
+                }
+            }
+    }
+}
+
+// browsere_tournment
+.background_tournment{
+    background-color: $purple-color-bg;
+    border-bottom: 3px solid #00a2ff;
+.browsere_tournment{
+   
+    
+    box-shadow: 0px 1px 5px #00a2ff;
+    .browsers_tour{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        .browser_tour_heading{
+            h3{
+                color: $white-color;
+                font-size: 1.5rem;
+
+            }
+           
+        }
+        .brower_button{
+            display: flex;
+            justify-content: right;
+            gap: 1rem;
+             button{
+                 &:nth-child(2){
+                     box-shadow: inset 0px 0px 10px 7px #00a2ff;
+                     transition: all 0.3s ease-in;
+                     display: inline-block;
+                     &:hover{
+                        
+                     box-shadow: inset 0px 0px 10px 7px #fea036;
+                     } 
+                 }
+                 &:nth-child(3){
+                     box-shadow: inset 0px 0px 10px 7px #00a2ff;
+                     transition: all 0.3s ease-in;
+                     display: inline-block;
+                     &:hover{
+                        
+                     box-shadow: inset 0px 0px 10px 7px #fea036;
+                     } 
+                 }
+                 
+             }
+         }
+    }
+}
+}
+
+// Tournament
+.Tournaments{
+    
+    padding: 180px 0px 0px;
+    background-color: #1f0644;
+        .touenament_block{
+            display: flex;
+            justify-content: start;
+            gap: 4rem;
+            padding: 3rem 3rem 0 3rem;
+            background-color: $blue_purple;
+            border-radius: 1rem;
+            .card_tournment{
+               
+            .tournament_card{
+                margin-top: -100px;
+                border-radius: 0.7rem;
+                box-shadow: inset 0px 0px 12px 7px #9a13d2;
+                text-align: center;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                .tournament_card_btn{
+                    padding-top: 2rem;
+                }
+            }
+            small{
+               
+                text-align: left;
+                color: $white-color;
+                font-size: 1rem;
+                line-height: 1.625rem;
+            }
+            .rank_members {
+                margin: 0.4rem 0;
+                display: flex;
+                justify-content: left;
+                padding-top: 0.5rem;
+                a {
+                    text-align: center;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #364374;
+                    border-radius: 50%;
+                    margin-right: -9px;
+
+                    img {
+                        text-align: center;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    &:nth-child(5) {
+                        padding: 0.3rem;
+                        color: $white_blue;
+                        background-color: $text_color;
+                        box-shadow: inset 0px 0px 7px 3px #9a13d2;
+                    }
+                }
+            }
+        }
+            .tournment_content{
+                width: 100%;
+                
+                .tournament_heading{
+                    border-bottom: 1px solid $border_lit_blue;
+                    padding-bottom: 1rem;
+                    h3{
+                        font-size: 1.75rem;
+                    line-height: 2.375rem;
+                    font-weight: bold;
+                    color: $white-color;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        color: $white_blue;
+                        padding-right: 1rem;
+                        padding-top: 1rem;
+                        &::after{
+                            border-left: 1px solid $border_lit_blue;
+                            padding-left: 1rem;
+                            margin-left: 1rem;
+                            content: "PS4 & XB1";
+                        }
+                    }
+                }
+                .tournment_team_info{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 3rem ;
+                    .tournment_2_img{
+                        text-align: center;
+                        position: relative;
+                        small{
+                            position: absolute;
+                            top: -1rem;
+                            left: 13%;
+                            right: 11%;
+                            color: $white-color;
+                            font-weight: 700;
+                            font-size: 0.875rem;
+                            color: #068be4;
+                            text-shadow: 0px 0px 75px #068be4, 0px 0px 7px #068be4, 0px 0px 7px #068be4;
+                            margin-top: 1rem;
+                        }
+                        .tournment_p{
+                            color: $white-color;
+                            font-size: 1.5rem;
+                            position: absolute;
+                            top: 2rem;
+                            left: 13%;
+                            right: 11%;
+                            &::before{
+                                @include icons($icon: "\f017");
+                                font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            padding-right: 0.5rem;
+                            font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    .tournment_2_prize{
+                        p{
+                            text-shadow: 0px 0px 75px #068be4, 0px 0px 7px #068be4;
+                            color: #00a2ff;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                        h2{
+                            padding: 2rem 0;
+                            font-weight: bolder;
+                            color: #261855;
+                            text-align: center;
+                            text-shadow: 0px 0px 18px rgb(164 17 220 / 99%), 2px 0px 0px #fe77ff, 0px 2px 0px #fe77ff, -2px 0px 0px #fe77ff, 0px -2px 0px #fe77ff;
+                        }
+                        .tournement_center{
+                    
+                            position: relative;
+                            p{
+                                color: $white-color;
+                                font-size: 1.125rem;
+                                font-weight: bold;
+                                position: absolute;
+                                top: 50%;
+                                left: 55%;
+                                transform: translate(-50%, -50%);
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .tournment_button{
+            text-align: center;
+            padding-top: 7rem;
+            button{
+                box-shadow: inset 0px 0px 10px 7px #00a2ff;
+            transition: all 0.3s ease-in;
+            display: inline-block;
+            &:hover{
+               
+            box-shadow: inset 0px 0px 10px 7px #fea036;
+            }
+            }
+        }
+       
+}
+
+// tournment_button

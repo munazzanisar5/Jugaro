@@ -1,0 +1,801 @@
+@import "./home.scss";
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+@import "../components/footer.scss";
+@import "./turnments.scss";
+@import "./bones.scss";
+@import "./games_details.scss";
+@import "./reffles.scss";
+@import "./ticket-pages.scss";
+@import "./help.scss";
+@import "./404.scss";
+@import "./about.scss";
+@import "./raffles-details.scss";
+@import "./games.scss";
+@import "./tournment2.scss";
+@import "./gamer-profile-private.scss";
+@import "./gamer-profile.scss";
+@import "./gamer-menu.scss";
+@import "./contact.scss";
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    .header {
+        .overlay{
+            
+            .bottom_nav {
+                display: none;
+            }
+        }
+    }
+
+    .mobile_navbar{
+        display: block !important;
+    }
+    .rewards {
+        .reward {
+            .rewards_img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .daily {
+        .daily_prize {
+            @include flex_direction_mobile;
+
+            .daily_prize_card:nth-child(1),
+            .daily_prize_card:nth-child(2) {
+                border-right: none;
+                padding-right: 0;
+            }
+
+            .daily_prize_card {
+                @include flex_direction_mobile;
+
+                .prize_text {
+                    text-align: center;
+                }
+
+                .prize_card_img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .play {
+        .play_images {
+
+            .left_img,
+            .right_img {
+                display: none;
+            }
+
+            .play_games_block {
+                @include flex_direction_mobile;
+
+                .play_game_card {
+                    width: 90% !important;
+                }
+            }
+        }
+    }
+
+    .leadboard {
+        .champians {
+            @include flex_direction_mobile;
+
+            .champians_block {
+                @include flex_direction_mobile;
+                text-align: center;
+
+                .champian_text {
+                    h2 {
+                        font-size: 1.8rem !important;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .leadboard {
+        .champina_details_block {
+            @include flex_direction_mobile;
+
+            .champians_detail {
+                width: 90%;
+
+                .champians_levels {
+                    gap: 0 !important;
+                    @include flex_direction_mobile;
+
+                    .level_img {
+                        @include flex_direction_mobile;
+                    }
+
+                    .BTC_img {
+                        @include flex_direction_mobile;
+                    }
+                }
+            }
+        }
+    }
+
+    .winner {
+        .winner_img {
+            @include flex_direction_mobile;
+
+            img {
+                width: 100%;
+            }
+
+            .winner_text {
+                position: static !important;
+                text-align: center;
+                margin: 0 2rem
+            }
+        }
+    }
+
+    .smartly {
+        .smartly_block {
+            @include flex_direction_mobile;
+        }
+    }
+
+    .subscribe {
+        .subscribe_block {
+            width: 90%;
+
+            .subscribe_imges {
+
+                .left_img,
+                .right_img {
+                    display: none;
+                }
+
+                .subscribe_input {
+                    padding: 2rem 0rem;
+                    width: 100%;
+                    position: static !important;
+
+                    input {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .subscribe_input {
+                    button {
+                        position: static !important;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer_menu {
+            @include flex_direction_mobile;
+            gap: 1rem;
+            padding: 1.7rem 0 2rem 0;
+
+            a {
+                border-left: none;
+            }
+        }
+    }
+
+    // About    
+    .about_product {
+        .about_product_heading {
+            h2 {
+                text-align: center
+            }
+        }
+
+        .about_product_menu {
+            @include flex_direction_mobile;
+            text-align: center;
+        }
+    }
+
+    .favorite_games 
+    .favorite_games {
+        .about_images {
+            background-image: none !important;
+            top: 0;
+            width: 100%;
+        }
+        .favourite {
+
+            .favorite_games_block {
+                padding: 0 2rem;
+
+                .favourit_text {
+                    width: 100% !important;
+                    padding: 0 1rem;
+                }
+
+                .VIP_players {
+                    @include flex_direction_mobile;
+
+                    .VIP_block {
+                        @include flex_direction_mobile;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .amazing {
+        .amazing_left {
+            display: none
+        }
+
+        .amazing_right {
+            display: none
+        }
+
+        .amazing_block {
+            @include flex_direction_mobile;
+
+            .amazing_card {
+                width: 90% !important;
+            }
+        }
+    }
+
+    .daily_prized {
+        .daily_prized_block {
+            @include flex_direction_mobile;
+
+            .daily_prized_card {
+                .prized_card_img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .expert {
+        .expert_team {
+            .expert_team_member {
+                @include flex_direction_mobile;
+            }
+        }
+    }
+
+    .comunity {
+        .community_jugaro {
+            @include flex_direction_mobile;
+
+            .jugaro_img {
+                width: 100%;
+                padding: 0 2rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .jugaro_content {
+                padding: 0 2rem;
+            }
+        }
+
+    }
+
+    // gamer profile
+    .profile_private {
+        .profile_private_menu {
+            @include flex_direction_mobile;
+        }
+        .private_profile{
+            @include flex_direction_mobile;
+             .private_profile_detail{
+                @include flex_direction_mobile;
+             }
+             .rank_right{
+                padding: 2rem 0 !important;
+             }
+        }
+    }
+
+    .raffles {
+        .raffles_content{
+            @include flex_direction_mobile;
+            .online_member_block{
+                @include flex_direction_mobile;
+                flex-basis: 100%;
+            }
+        }
+    }
+
+
+    .online_player {
+        .online_player_block{
+            @include flex_direction_mobile;
+            .online_player_menu{
+                @include flex_direction_mobile;
+                
+            }
+            .online_player_btn{
+                @include flex_direction_mobile;
+            }
+        }
+    }
+
+
+    .overview{
+        .overview_block{
+            @include flex_direction_mobile;
+            .overview_left {
+                flex-basis: 100% !important;
+                .about_me , .rank , .achievements{
+                    width: 90%;
+                    margin: 2rem auto !important;
+                }
+            }
+        }
+    }
+
+    .overview {
+        .overview_block {
+            .overview_right {
+                width: 90%;
+                .games_playing{
+                    @include flex_direction_mobile;
+                }
+            }
+        }
+    }
+
+    // gammer profile private
+    .affiliate {
+        .affiliate_program{
+            width: 90% !important;
+            .referral_link {
+                @include flex_direction_mobile;
+                .referral_left{
+                    flex-basis: 100% !important;
+                    width: 100%;
+                    
+                }
+            }
+            
+            .earned_referral{
+                @include flex_direction_mobile;
+            }
+            .referral_history{
+                .referral_header{
+                    @include flex_direction_mobile;
+                }
+            }
+        }
+    }
+
+    // bounse
+    .bonuses {
+        .bonuses_content {
+            .bonuses_heading{
+                h2{
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+
+    .bonuses_card_bg {
+        .bounses_card_block{
+            @include flex_direction_mobile;
+            .bonuses_card{
+                width: 90%;
+                .bonuses_card_img{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .get_bonuse_bg {
+        .get_bonuse {
+            .get_bonuse_card{
+                @include flex_direction_mobile;
+            }
+        }
+    }
+
+    .question {
+        .question_block{
+            @include flex_direction_mobile;
+           .question_img{
+            flex-basis:100% !important;
+            width: 90%;
+           }
+           .question_content {
+            width: 90%;
+            flex-basis: 100% !important;
+            
+           }
+        }
+    }
+
+
+    // contact
+    .contacts {
+        .contact_block {
+            width: 90%;
+            .contact_blocks{
+                @include flex_direction_mobile;
+                .contact_right {
+                    .contact_inf  {
+                        @include flex_direction_mobile;
+                        .contact_text{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // raffles
+    .single_product {
+        .single_product_heading{
+            text-align: center
+        }
+        .single_product_menu{
+            @include flex_direction_mobile;
+            text-align: center;
+        }
+    }
+    
+    .raffles {
+        .raffles_content {
+            @include flex_direction_mobile;
+        }
+        .raffles_input {
+            flex-basis: 100% !important; 
+            width: 90%;
+            
+        }
+        .raffles_dropdown{
+            flex-basis: 100% !important; 
+           
+            
+        }
+    }
+
+    .product_ending {
+        .product_ending_block{
+            @include flex_direction_mobile;
+            .product_cards {
+                flex-basis: 100%;
+                width: 100%;
+                .ending_product_card{
+                    @include flex_direction_mobile;
+                    .product_ending_cards{
+                        @include flex_direction_mobile;
+                        width: 90%;
+                        .card_top {
+                            .ending_img {
+                                width: 100% !important;
+                                img{
+                                    width: 100% !important; 
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                        .card_bottom {
+                            .bottom_ending {
+                                @include flex_direction_mobile;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .product_ending {
+        .product_ending_block {
+            .recent_winner {
+                text-align: center;
+                
+                .recent_heading{
+                    @include flex_direction_mobile;
+                }
+                .discount_card{
+                    width: 90%;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                       
+                    }
+                }
+                .recent_card{
+                   
+                    @include flex_direction_mobile;
+                    .profile {
+                        .profile_infor {
+                            @include flex_direction_mobile;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    
+    // raffles details
+    .jetblack {
+        .jectblack_block{
+            @include flex_direction_mobile;
+             .jetblock_images{
+                .jetblack_img{
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+                .jetblack_product{
+                    justify-content: center !important;
+                   width: 15% !important;
+                   margin: 0 auto;
+                }
+             }
+            .jectblack_right {
+                .jetblack_details{
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+                .product_feature{
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .hyperX {
+        .hyper {
+            width: 90% !important;
+                    margin: 0 auto;
+            p{
+                padding: 2rem 0 0 0 !important;
+            }
+        }
+    }
+    // ticket
+    .ticket{
+        .ticket_block{
+            @include flex_direction_mobile;
+            .line_1{
+                width: 90%;
+                margin: 0 auto;
+                .line_1_top{
+                    @include flex_direction_mobile;
+                    .line_1_btn{
+                        @include flex_direction_mobile;
+                    }
+                }
+            }
+            .my_line{
+                width: 90%;
+                margin: 0 auto;
+                .my_line_ticket{
+                    width: 90%;
+                    margin: 0 auto;
+                    img{
+                        width: 23%;
+                    }
+                }
+            }
+        }
+    }
+
+    // tournment2
+    .tournment_two {
+        .tournment_two_members{
+            @include flex_direction_mobile;
+        }
+    }
+
+    .background_tournment {
+        border: none;
+        .browsere_tournment {
+            .browser_tour_heading{
+                text-align: center
+            }
+            .browsers_tour{
+                @include flex_direction_mobile;
+                .brower_button{
+                    @include flex_direction_mobile;
+                }
+            }
+        }
+    }
+    
+    .Tournaments {
+        .touenament_block{
+            @include flex_direction_mobile;
+             .card_tournment {
+                text-align: center;
+                .rank_members{
+                    justify-content: center !important;
+                }
+             }
+           .tournment_content {
+            .tournment_team_info{
+                width: 90%;
+                @include flex_direction_mobile;
+                .tournment_2_img {
+                   width: 100%;
+                   img{
+                    width: 100%;
+                   }
+                }
+                .tournment_2_prize {
+                    .tournement_center{
+                        width: 100%;
+                        P{
+                            // left: 0 !important;
+                            width: 9rem !important;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+           }
+        }
+    }
+
+
+    // tournment
+    .Tournament{
+        .touenament_block{
+            width: 90%;
+            margin: 0 auto;
+            @include flex_direction_mobile;
+            .tournment_content{
+                .tournment_team_info{
+                    @include flex_direction_mobile;
+                }
+            }
+        }
+        .tournment_bottom{
+            width: 90%;
+            margin: 0 auto;
+            @include flex_direction_mobile;
+            .tournement_center{
+                width: 100%;
+                P{
+                    // left: 0 !important;
+                    width: 9rem !important;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .prize {
+        .prize_heading{
+            text-align: center
+        }
+        .prize_cup{
+            @include flex_direction_mobile;
+            .cup{
+                
+                .prizecup_img{
+                    width: 90%;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .prize_content{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    // help
+    .help {
+        text-align: center;
+        .help_menu{
+            @include flex_direction_mobile;
+        }
+    }
+    .agreement {
+        .agrement_block{
+            @include flex_direction_mobile;
+            margin: 0 auto;
+            width: 90%;
+        }
+    }
+
+    // achievements
+    .overview {
+        .block_overview {
+            .over_view_achieve {
+                width: 90%;
+                margin: 0 auto;
+                .achivement_bdg{
+                    @include flex_direction_mobile;
+                }
+            }
+        }
+    }
+
+    // statistics
+    .statistics {
+        .statistics_block{
+            @include flex_direction_mobile;
+            .statistics_right{
+                width: 90%;
+                margin: 0 auto;
+                .statistics_image{
+                   
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // friends
+
+    .friendz {
+        .friendz_top{
+            @include flex_direction_mobile;  
+            flex-basis: 0 !important;
+        }
+    }
+
+    .friendz {
+        .friendz_block{
+            @include flex_direction_mobile;
+            .friendz_add{
+                @include flex_direction_mobile;
+                text-align: center;
+                flex: 0 !important;
+            }
+        }
+    }
+
+    // 404
+    .page_not_found {
+        .page_not_found_image{
+            width: 100% !important;
+        }
+    }
+    
+}

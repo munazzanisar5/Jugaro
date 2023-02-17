@@ -1,0 +1,606 @@
+button {
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px 7px #fea036;
+  transition: all 0.3s ease-in;
+  border: none;
+  display: inline-block;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  color: #837ad9;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 7px 5px #bf1995;
+  background: none;
+  border: 0px;
+  padding: 0px 60px 0px 30px;
+  outline: none;
+}
+
+.background_images, .winner, .play, .daily, .rewards .rewards_bg_coins, .rewards {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.header .overlay {
+  position: relative;
+  background-image: linear-gradient(89deg, rgba(84, 6, 143, 0.3019607843) 0%, rgba(122, 27, 180, 0.2784313725) 100%);
+  z-index: 1;
+}
+.header .overlay .top_nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #774297;
+  background: linear-gradient(-90deg, rgba(84, 6, 143, 0.5) 0%, rgba(122, 27, 180, 0.5) 100%);
+}
+.header .overlay .top_nav::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 56px solid rgba(84, 6, 143, 0.5);
+  border-right: 20px solid transparent;
+}
+.header .overlay .top_nav::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-top: 56px solid rgba(122, 27, 180, 0.5);
+  border-left: 20px solid transparent;
+}
+.header .overlay .top_nav .nav_support {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.header .overlay .top_nav .nav_support .nav_title {
+  border-right: 1px solid #6864b2;
+  padding-right: 2rem;
+}
+.header .overlay .top_nav .nav_support .nav_title p {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.header .overlay .top_nav .nav_support .nav_title p::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f590";
+  color: #00a2ff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 0.5rem;
+}
+.header .overlay .top_nav .nav_support .icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.header .overlay .top_nav .nav_support .icons .facebook::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f39e";
+}
+.header .overlay .top_nav .nav_support .icons .twitter::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+}
+.header .overlay .top_nav .nav_support .icons .printest::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f231";
+}
+.header .overlay .top_nav .nav_support .icons .indeed::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e1";
+}
+.header .overlay .top_nav .nav_support .icons .instagram::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+}
+.header .overlay .top_nav .right_nav {
+  display: flex;
+  justify-content: right;
+  gap: 1.5rem;
+}
+.header .overlay .top_nav .right_nav .dropdown {
+  border-right: 1px solid #6864b2;
+  padding-right: 2rem;
+}
+.header .overlay .top_nav .right_nav .dropdown p {
+  color: #ffffff;
+}
+.header .overlay .top_nav .right_nav .notification {
+  border-right: 1px solid #6864b2;
+  padding-right: 1.5rem;
+  position: relative;
+}
+.header .overlay .top_nav .right_nav .notification::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0f3";
+  color: #00a2ff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-shadow: 0px 0px 20px #3f40b4, 0px 0px 20px #3f40b4;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal {
+  position: absolute;
+  top: 2rem;
+  left: -50rem;
+  z-index: 6;
+  display: none;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content {
+  border-radius: 30px;
+  background-color: #250752;
+  box-shadow: inset 0px 0px 12px 8px #00a2ff;
+  padding: 30px;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_heading h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_heading .close {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0px 0px 10px #00a2ff;
+  background: #260753;
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #ffffff;
+  line-height: 1.6rem;
+  border-radius: 6rem;
+  text-align: center;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_block {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  padding: 40px 30px 10px;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_block .modal_text {
+  background: #2d0b60;
+  padding: 1.875rem 1.875rem 1.875rem;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_block .modal_text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_block .modal_text span {
+  color: #e0c360;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_block .modal_text h4 {
+  padding: 2rem 0 1rem;
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.header .overlay .top_nav .right_nav .notification .notific_modal .modal_content .modal_block .modal_text p {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.header .overlay .top_nav .right_nav .messenger::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e0";
+  color: #00a2ff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-shadow: 0px 0px 20px #3f40b4, 0px 0px 20px #3f40b4;
+}
+.header .overlay .bottom_nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: relative;
+}
+.header .overlay .bottom_nav .menu {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.header .overlay .bottom_nav .menu a {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all linear 0.3s;
+}
+.header .overlay .bottom_nav .menu a:hover {
+  color: #fa009f;
+  text-shadow: 0px 0px 10px #bf0b2d;
+}
+.header .overlay .bottom_nav .menu .drop_icon {
+  padding-left: 1rem;
+}
+.header .overlay .bottom_nav .menu .drop_icon::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 0.5rem;
+}
+.header .overlay .bottom_nav .menu .nav_dropdown {
+  position: relative;
+}
+.header .overlay .bottom_nav .menu .nav_dropdown .more_pages {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  background-color: #1f0644;
+  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+  border-top: 4px solid #fa009f;
+  transition: all linear 0.3s;
+  position: absolute;
+  top: 3.6rem;
+  left: -6.1rem;
+  z-index: 3;
+}
+.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f101";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 0.5rem;
+}
+.header .overlay .bottom_nav .logo {
+  position: relative;
+}
+.header .overlay .bottom_nav .logo img {
+  position: absolute;
+  top: -5rem;
+  left: -7rem;
+  z-index: 3;
+  height: 9.563rem;
+}
+.header .overlay .bottom_nav .nav_blocks {
+  display: flex;
+  gap: 2rem;
+}
+.header .nav_bottom_border {
+  width: 100%;
+  height: 1px;
+  background: #54068f;
+  box-shadow: 0px 0px 10px 2px rgba(137, 56, 175, 0.5254901961);
+}
+
+.mobile_navbar {
+  display: none;
+}
+
+.rewards {
+  background-image: url(/images/h1.jpg);
+  position: relative;
+  padding: 16.188rem 0px 13.75rem;
+}
+.rewards .rewards_bg_coins {
+  background: url(/images/h2-shape.png);
+  z-index: 1;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.rewards .rewards_bg_coins .reward {
+  padding: 6rem;
+}
+.rewards .rewards_bg_coins .reward .rewards_title h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.rewards .rewards_bg_coins .reward .rewards_img {
+  width: 60rem;
+  margin: 0 auto;
+}
+.rewards .rewards_bg_coins .reward .rewards_img img {
+  width: 100%;
+}
+.rewards .rewards_bg_coins .reward .reward_btn {
+  text-align: center;
+}
+
+.daily {
+  padding: 40px 0px 40px;
+  background-image: url(/images/counter-bg.jpg);
+  box-shadow: inset 0px 15px 15px -10px #00a2ff, inset 0px -15px 15px -10px #00a2ff;
+}
+.daily .daily_prize {
+  display: flex;
+  justify-content: space-between;
+}
+.daily .daily_prize .daily_prize_card {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.daily .daily_prize .daily_prize_card:nth-child(1), .daily .daily_prize .daily_prize_card:nth-child(2) {
+  border-right: 1px solid #774297;
+  padding-right: 6rem;
+}
+.daily .daily_prize .daily_prize_card .prize_text {
+  padding-top: 2rem;
+}
+.daily .daily_prize .daily_prize_card .prize_text h2 {
+  color: #ffffff;
+}
+.daily .daily_prize .daily_prize_card .prize_text p {
+  color: #ffffff;
+}
+
+.play {
+  background-image: url(/images/section-bg.jpg);
+  padding: 7.5rem 0px 7.5rem;
+  position: relative;
+}
+.play .play_images .left_img {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+.play .play_images .right_img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+.play .play_images .paly_text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.play .play_images .paly_text p {
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+  font-weight: 700;
+  color: #fa009f;
+}
+.play .play_images .paly_text h2 {
+  color: #ffffff;
+  line-height: 4.375rem;
+}
+.play .play_images .paly_text small {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.play .play_images .play_games_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 1;
+}
+.play .play_images .play_games_block .play_game_card {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 12px 7px #9a13d2;
+  padding: 2.5rem 1.25rem;
+  transition: all 0.3s ease-in;
+}
+.play .play_images .play_games_block .play_game_card:hover {
+  transform: translateY(-5px);
+  box-shadow: inset 0px 0px 12px 7px #fea036;
+}
+.play .play_images .play_games_block .play_game_card .play_card_btn {
+  padding: 2rem 0;
+}
+.play .play_images .play_games_block .play_game_card small {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+.play .play_images .arrow {
+  text-align: center;
+}
+.play .play_images .arrow a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.leadboard {
+  background-color: #1f0644;
+}
+.leadboard .champians {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.leadboard .champians .champians_block {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+.leadboard .champians .champians_block .champian_text p {
+  color: #fa009f;
+  font-size: 1.75rem;
+}
+.leadboard .champians .champians_block .champian_text h2 {
+  color: #ffffff;
+}
+.leadboard .champina_details_block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+.leadboard .champina_details_block .champians_detail {
+  background-color: #24074f;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.leadboard .champina_details_block .champians_detail .champians_levels {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 1rem 0;
+  border-top: 4px solid #211863;
+  border-bottom: 4px solid #211863;
+  margin-bottom: 10px;
+  padding: 1.25rem 0px 1.25rem;
+}
+.leadboard .champina_details_block .champians_detail .champians_levels .level_img,
+.leadboard .champina_details_block .champians_detail .champians_levels .BTC_img {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.leadboard .champina_details_block .champians_detail .champians_levels .level_img h6,
+.leadboard .champina_details_block .champians_detail .champians_levels .BTC_img h6 {
+  color: #ffffff;
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+.leadboard .champina_details_block .champians_detail .champians_levels .level_img h5,
+.leadboard .champina_details_block .champians_detail .champians_levels .BTC_img h5 {
+  color: #fcc310;
+  font-size: 1.3rem;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.winner {
+  background-color: #1f0644;
+  background-image: url(/images/joinus-bg.png);
+}
+.winner .winner_img {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.winner .winner_img .winner_text {
+  position: absolute;
+  top: 8rem;
+  right: 8rem;
+  left: 31rem;
+  z-index: 1;
+}
+.winner .winner_img .winner_text p {
+  color: #fa009f;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.winner .winner_img .winner_text h2 {
+  color: #ffffff;
+}
+.winner .winner_img .winner_text small {
+  font-size: 1.125rem;
+  color: #ffffff;
+  line-height: 1.74;
+  font-weight: 400;
+}
+.winner .winner_img .winner_text .winner_btn {
+  padding: 2rem 0;
+}
+
+.smartly {
+  background-color: #1f0644;
+  padding: 5rem 0;
+}
+.smartly .smartly_text {
+  text-align: center;
+}
+.smartly .smartly_text p {
+  color: #fa009f;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.smartly .smartly_text h2 {
+  color: #ffffff;
+}
+.smartly .smartly_text small {
+  font-size: 1.125rem;
+  color: #ffffff;
+  line-height: 1.74;
+  font-weight: 400;
+}
+.smartly .smartly_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.smartly .smartly_block .smartly_card {
+  text-align: center;
+}
+.smartly .smartly_block .smartly_card .smartly_card_text {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+}
+.smartly .smartly_block .smartly_card .smartly_card_text h3 {
+  font-size: 1.5rem;
+}
+.smartly .smartly_btn {
+  text-align: center;
+}/*# sourceMappingURL=home.css.map */

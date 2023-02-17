@@ -1,0 +1,318 @@
+button {
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px 7px #fea036;
+  transition: all 0.3s ease-in;
+  border: none;
+  display: inline-block;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  color: #837ad9;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 7px 5px #bf1995;
+  background: none;
+  border: 0px;
+  padding: 0px 60px 0px 30px;
+  outline: none;
+}
+
+.background_images {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overview {
+  background-color: #1f0644;
+}
+.overview .overview_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.overview .overview_block .overview_left {
+  flex-basis: 16rem;
+}
+.overview .overview_block .overview_left .about_me {
+  box-shadow: inset 0px 0px 4px 2px #00a2ff;
+  padding: 30px 20px 30px;
+  border-radius: 10px;
+}
+.overview .overview_block .overview_left .about_me h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+.overview .overview_block .overview_left .about_me p {
+  font-size: 1rem;
+  color: #ada6e7;
+  padding: 0.5rem 0;
+}
+.overview .overview_block .overview_left .about_me .location {
+  font-size: 1rem;
+  color: #ada6e7;
+}
+.overview .overview_block .overview_left .about_me .location::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f5a0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 0.5rem;
+}
+.overview .overview_block .overview_left .about_me .since {
+  font-size: 1rem;
+  color: #ada6e7;
+}
+.overview .overview_block .overview_left .about_me .since::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f073";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 0.5rem;
+}
+.overview .overview_block .overview_left .rank {
+  margin: 2rem 0;
+  box-shadow: inset 0px 0px 4px 2px #00a2ff;
+  padding: 30px 20px 30px;
+  border-radius: 10px;
+}
+.overview .overview_block .overview_left .rank .rank_img {
+  display: flex;
+  gap: 1rem;
+}
+.overview .overview_block .overview_left .rank .rank_img img {
+  margin-top: -3.5rem;
+}
+.overview .overview_block .overview_left .rank .rank_img p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: -1rem;
+}
+.overview .overview_block .overview_left .rank .rank_img p::before {
+  content: "Rank: ";
+}
+.overview .overview_block .overview_left .rank .progress_bar {
+  margin: 1rem 0;
+  width: 100%;
+  height: 1rem;
+  border-radius: 0.25rem;
+  background: #5e3a93;
+}
+.overview .overview_block .overview_left .rank .progress_bar .progress {
+  width: 75%;
+  height: 1rem;
+  background-color: #fc6d9c;
+  border-radius: 0.25rem 0 0 0.25rem;
+  color: #ffffff;
+  text-align: center;
+}
+.overview .overview_block .overview_left .rank a {
+  color: #838bf1;
+}
+.overview .overview_block .overview_left .rank a::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.6rem;
+  color: #838bf1;
+  padding-left: 1rem;
+}
+.overview .overview_block .overview_left .achievements {
+  box-shadow: inset 0px 0px 4px 2px #00a2ff;
+  padding: 30px 20px 30px;
+  border-radius: 10px;
+}
+.overview .overview_block .overview_left .achievements .achievement_heading {
+  display: flex;
+  justify-content: space-between;
+}
+.overview .overview_block .overview_left .achievements .achievement_heading h3 {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.overview .overview_block .overview_left .achievements .achievement_heading a {
+  color: #838bf1;
+  font-size: 0.863rem;
+  padding-top: 0.3rem;
+}
+.overview .overview_block .overview_left .achievements .achievement_heading a::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.6rem;
+  color: #838bf1;
+  padding-left: 1rem;
+}
+.overview .overview_block .overview_left .achievements .achivement_bdg {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.overview .overview_block .overview_left .achievements .achivement_bdg .achiv_badges {
+  padding-top: 1rem;
+}
+.overview .overview_block .overview_left .achievements .achivement_bdg .achiv_badges .achi_img img {
+  height: 2.5rem;
+}
+.overview .overview_block .overview_left .achievements .achivement_bdg .achiv_badges small {
+  color: #ada6e7;
+}
+.overview .overview_block .overview_left .over_view_achieve {
+  width: 100%;
+}
+.overview .overview_block .overview_right {
+  flex-basis: 57rem;
+  padding: 30px 30px 30px;
+  border: 1px solid #0a6ec1;
+  border-radius: 10px;
+}
+.overview .overview_block .overview_right .overview_heading {
+  padding-bottom: 2rem;
+}
+.overview .overview_block .overview_right .overview_heading h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.overview .overview_block .overview_right .games_playing {
+  border-top: 3px solid #25165a;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+}
+.overview .overview_block .overview_right .games_playing:nth-child(7) {
+  border-bottom: 3px solid #25165a;
+}
+.overview .overview_block .overview_right .games_playing .fortnite {
+  display: flex;
+  gap: 1rem;
+}
+.overview .overview_block .overview_right .games_playing .fortnite .fortnite_text h4 {
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+.overview .overview_block .overview_right .games_playing .fortnite .fortnite_text small {
+  font-size: 0.863rem;
+  color: #ada6e7;
+}
+.overview .overview_block .overview_right .games_playing .rank_members {
+  display: flex;
+}
+.overview .overview_block .overview_right .games_playing .rank_members a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #364374;
+  border-radius: 50%;
+  margin-right: -15px;
+}
+.overview .overview_block .overview_right .games_playing .rank_members a img {
+  width: 100%;
+  object-fit: cover;
+}
+.overview .overview_block .overview_right .games_playing .rank_members a:nth-child(5) {
+  box-shadow: inset 0px 0px 7px 3px #9a13d2;
+  font-size: 13px;
+  background: #300983;
+  padding: 1rem;
+  color: #ffffff;
+}
+.overview .overview_block .overview_right .games_playing .games_player_text {
+  text-align: center;
+}
+.overview .overview_block .overview_right .games_playing .games_player_text small {
+  color: #ada6e7;
+  font-size: 0.75rem;
+}
+.overview .overview_block .overview_right .games_playing .games_player_text h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.overview .overview_block .overview_right .games_playing .games_player_btn button {
+  font-size: 13px;
+  color: #b7afff;
+  box-shadow: inset 0px 0px 6px 3px #00a2ff;
+  padding: 10px 25px;
+}
+.overview .overview_block .over_view {
+  margin: 0 auto;
+}
+.overview .block_overview {
+  flex-basis: 0 !important;
+  width: 100% !important;
+}
+
+.overview .block_overview {
+  padding: 2rem 0;
+}
+.overview .block_overview .over_view_achieve {
+  box-shadow: inset 0px 0px 4px 2px #00a2ff;
+  padding: 30px 20px 30px;
+  border-radius: 10px;
+}
+.overview .block_overview .over_view_achieve .achievement_heading {
+  display: flex;
+  justify-content: space-between;
+}
+.overview .block_overview .over_view_achieve .achievement_heading h3 {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.overview .block_overview .over_view_achieve .achievement_heading a {
+  color: #838bf1;
+  font-size: 0.863rem;
+  padding-top: 0.3rem;
+}
+.overview .block_overview .over_view_achieve .achievement_heading a::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.6rem;
+  color: #838bf1;
+  padding-left: 1rem;
+}
+.overview .block_overview .over_view_achieve .achivement_bdg {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.overview .block_overview .over_view_achieve .achivement_bdg .achiv_badges {
+  padding-top: 1rem;
+}
+.overview .block_overview .over_view_achieve .achivement_bdg .achiv_badges .achi_img img {
+  height: 2.5rem;
+}
+.overview .block_overview .over_view_achieve .achivement_bdg .achiv_badges small {
+  color: #ada6e7;
+}/*# sourceMappingURL=gamer-profile.css.map */

@@ -1,0 +1,181 @@
+button {
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px 7px #fea036;
+  transition: all 0.3s ease-in;
+  border: none;
+  display: inline-block;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  color: #837ad9;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 7px 5px #bf1995;
+  background: none;
+  border: 0px;
+  padding: 0px 60px 0px 30px;
+  outline: none;
+}
+
+.background_images, .contacts, .contact {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  background-image: url(/images/contact.png);
+  padding: 23.375rem 0;
+}
+
+.contacts {
+  background-image: url(/images/contact-bg.png);
+  background-color: #1f0644;
+}
+.contacts .contact_block {
+  background-color: #1f0644;
+  margin-top: -15.625rem;
+  padding: 2.5rem 1.875rem 2.5rem;
+  border-radius: 20px;
+  position: relative;
+  top: -15rem;
+}
+.contacts .contact_block .contact_heading {
+  text-align: center;
+  padding: 2rem 0;
+}
+.contacts .contact_block .contact_heading h2 {
+  color: #ffffff;
+}
+.contacts .contact_block .contact_blocks {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+.contacts .contact_block .contact_blocks .contact_left {
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  border-radius: 10px;
+  padding: 2.5rem 1.875rem;
+}
+.contacts .contact_block .contact_blocks .contact_left .contact_form label {
+  display: block;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.contacts .contact_block .contact_blocks .contact_left .contact_form input {
+  box-shadow: inset 0px 0px 4px 2px #00a2ff;
+  padding: 0px 30px;
+}
+.contacts .contact_block .contact_blocks .contact_left .contact_form textarea {
+  box-shadow: inset 0px 0px 4px 2px #00a2ff;
+  padding: 0px 30px;
+  border-radius: 1rem;
+  background: none;
+  border: none;
+  padding: 20px 30px;
+  color: #837ad9;
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+.contacts .contact_block .contact_blocks .contact_left .contact_form .form_bottom {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.contacts .contact_block .contact_blocks .contact_left .contact_form .form_bottom input {
+  border: none;
+  box-shadow: none;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+.contacts .contact_block .contact_blocks .contact_left .contact_form .form_bottom p {
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+.contacts .contact_block .contact_blocks .contact_left .contact_form .contact_btn {
+  padding: 1rem 0;
+}
+.contacts .contact_block .contact_blocks .contact_right h3 {
+  color: #ffffff;
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+}
+.contacts .contact_block .contact_blocks .contact_right p {
+  color: #ada6e7;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+}
+.contacts .contact_block .contact_blocks .contact_right small {
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+}
+.contacts .contact_block .contact_blocks .contact_right .contact_inf {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.contacts .contact_block .contact_blocks .contact_right .contact_inf .contact_icon {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #00a2ff;
+  font-size: 30px;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.contacts .contact_block .contact_blocks .contact_right .contact_inf .contact_icon:nth-child(1)::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.contacts .contact_block .contact_blocks .contact_right .contact_inf .contact_icon:nth-child(2)::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.contacts .contact_block .contact_blocks .contact_right .contact_inf .contact_icon:nth-child(3)::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.contacts .contact_block .contact_blocks .contact_right .contact_inf .contact_text h4 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.contacts .contact_block .contact_blocks .contact_right .contact_inf .contact_text p {
+  color: #ada6e7;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=contact.css.map */

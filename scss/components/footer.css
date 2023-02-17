@@ -1,0 +1,173 @@
+button {
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px 7px #fea036;
+  transition: all 0.3s ease-in;
+  border: none;
+  display: inline-block;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  color: #837ad9;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 7px 5px #bf1995;
+  background: none;
+  border: 0px;
+  padding: 0px 60px 0px 30px;
+  outline: none;
+}
+
+.background_images, .subscribe .subscribe_block {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer_link_bg, .footer .footer_links .instagram, .footer .footer_links .indeed, .footer .footer_links .printest, .footer .footer_links .twitter, .footer .footer_links .facebook {
+  width: 2.188rem;
+  height: 2.188rem;
+  border-radius: 6rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer_link_bg:hover, .footer .footer_links .instagram:hover, .footer .footer_links .indeed:hover, .footer .footer_links .printest:hover, .footer .footer_links .twitter:hover, .footer .footer_links .facebook:hover {
+  background-color: #f7b230;
+}
+
+.footer {
+  background-image: url(/images/footerbg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #070b28;
+  padding-top: 12rem;
+  text-align: center;
+}
+.footer .footer_links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.footer .footer_links .facebook::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f39e";
+}
+.footer .footer_links .twitter::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+}
+.footer .footer_links .printest::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f231";
+}
+.footer .footer_links .indeed::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e1";
+}
+.footer .footer_links .instagram::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+}
+.footer .footer_menu {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 8rem 0 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer .footer_menu a {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+  border-left: 2px solid #686fc5;
+  padding-left: 2rem;
+}
+.footer .footer_menu a:nth-child(1) {
+  border-left: none;
+}
+.footer .footer_bottom p {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+  padding: 1.5rem 0;
+}
+
+.subscribe {
+  background-color: #1f0644;
+}
+.subscribe .subscribe_block {
+  background-image: url(/images/newsletter.jpg);
+  padding: 53px 30px 60px;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+  border-radius: 30px;
+  position: relative;
+  bottom: -120px;
+  z-index: 1;
+  overflow: hidden;
+}
+.subscribe .subscribe_block .subscribe_imges .left_img {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+.subscribe .subscribe_block .subscribe_imges .right_img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+.subscribe .subscribe_block .subscribe_imges .subscribe_heading {
+  text-align: center;
+}
+.subscribe .subscribe_block .subscribe_imges .subscribe_heading p {
+  color: #fa009f;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.subscribe .subscribe_block .subscribe_imges .subscribe_heading h4 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.subscribe .subscribe_block .subscribe_imges .subscribe_input {
+  padding: 2rem 20rem;
+  width: 100%;
+  position: relative;
+}
+.subscribe .subscribe_block .subscribe_imges .subscribe_input button {
+  position: absolute;
+  top: 29%;
+  right: 28.2%;
+}/*# sourceMappingURL=footer.css.map */

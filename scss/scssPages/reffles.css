@@ -1,0 +1,295 @@
+button {
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px 7px #fea036;
+  transition: all 0.3s ease-in;
+  border: none;
+  display: inline-block;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  color: #837ad9;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 7px 5px #bf1995;
+  background: none;
+  border: 0px;
+  padding: 0px 60px 0px 30px;
+  outline: none;
+}
+
+.single_product {
+  background-image: url(/images/raffles.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  padding: 10rem 0;
+}
+.single_product .single_product_heading {
+  padding: 2rem 0;
+}
+.single_product .single_product_heading h2 {
+  font-size: 5rem;
+  color: #ffffff;
+}
+.single_product .single_product_menu {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+.single_product .single_product_menu p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.raffles {
+  background-image: url(/images/counter-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 15px 15px -10px #00a2ff, inset 0px -15px 15px -10px #00a2ff;
+}
+.raffles .raffles_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.raffles .raffles_content .raffles_text {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.raffles .raffles_content .raffles_text h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.raffles .raffles_content .raffles_text h3:nth-child(1) {
+  border-right: 2px solid #ffffff;
+  padding-right: 2rem;
+}
+.raffles .raffles_content .raffles_ticket h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.jetblack {
+  background-color: #1f0644;
+}
+.jetblack .jectblack_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.jetblack .jectblack_block .jetblock_images .jetblack_img {
+  width: 39.563rem;
+}
+.jetblack .jectblack_block .jetblock_images .jetblack_img img {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+.jetblack .jectblack_block .jetblock_images .jetblack_product {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.8rem;
+  padding: 2rem 0;
+  width: 8.516rem;
+}
+.jetblack .jectblack_block .jetblock_images .jetblack_product img {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details {
+  padding: 1.875rem 1.875rem 1.688rem;
+  border-radius: 0.625rem;
+  box-shadow: inset 0px 0px 8px 6px #00a2ff;
+  background: #310660;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details p {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .timer_product {
+  color: #00a2ff;
+  font-size: 3rem;
+  color: #ada6e7;
+  font-weight: 600;
+  line-height: 46px;
+  text-shadow: 0px 0px 8px #00a2ff;
+  font-weight: bold;
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .timer_product p span {
+  color: #ced0e2;
+  font-size: 0.875rem;
+  display: block;
+  text-shadow: none;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .bar .numbers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .bar .top-bar {
+  position: relative;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .bar .top-bar .progress-bar {
+  position: absolute;
+  width: 0.7rem;
+  height: 7px;
+  background: #ea842a;
+  border-radius: 50px;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .bar .top-bar .progress-bar .main-bar {
+  background: #400a73;
+  height: 7px;
+  width: 100%;
+  border-radius: 50px;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets {
+  padding: 2rem 0;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f3ff";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #4fda38;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets small {
+  font-size: 0.875rem;
+  color: #4fda38;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_text {
+  text-align: center;
+  border-top: 1px solid #613788;
+  border-bottom: 1px solid #613788;
+  padding: 1rem 0;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_text h3 {
+  color: #ffffff;
+  font-size: 2.25rem;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_text small {
+  font-size: 1rem;
+  color: #ada6e7;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_btn .price_quality {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.2rem;
+  border: 1px solid #584395;
+  border-radius: 6rem;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_btn .price_quality span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6rem;
+  padding: 0.2rem 0.33rem 0.1rem;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_btn .price_quality span::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f068";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_btn .price_quality span:nth-child(2)::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f067";
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_btn .price_quality small {
+  color: #00a2ff;
+  font-size: 1rem;
+  text-shadow: 0px 0px 10px #00a2ff, 0px 0px 10px #00a2ff;
+}
+.jetblack .jectblack_block .jectblack_right .jetblack_details .tickets_btn button {
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 32px;
+  box-shadow: inset 0px 0px 8px 3px #fea036;
+  padding: 0 20px;
+}
+.jetblack .jectblack_block .jectblack_right .product_feature {
+  padding: 3rem 0;
+}
+.jetblack .jectblack_block .jectblack_right .product_feature h6 {
+  font-size: 1.3rem;
+  line-height: 1.625rem;
+  color: #ffffff;
+}
+.jetblack .jectblack_block .jectblack_right .product_feature h6::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f00c";
+  font-size: 1.5rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #4fda38;
+  padding-right: 1.5rem;
+}
+
+.hyperX {
+  background-color: #1f0644;
+}
+.hyperX .hyper {
+  padding: 0 0 5rem 0;
+}
+.hyperX .hyper h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+.hyperX .hyper h4 {
+  font-size: 1.75rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.hyperX .hyper p {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 2rem 40rem 0 0;
+}/*# sourceMappingURL=reffles.css.map */

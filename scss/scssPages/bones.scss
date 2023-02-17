@@ -1,0 +1,113 @@
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+
+.bonuses {
+    background-image: url(/images/bonus.jpg);
+    @extend .background_images;
+    height: 34.375rem;
+    padding-top: 19rem;
+
+    .bonuses_content {
+        background-color: #1f0644;
+        padding-top: 4.75rem;
+        border-radius: 0.375rem;
+        padding-bottom: 4.375rem;
+        background-image: url(/images/bg-s3.png);
+        background-repeat: repeat;
+        text-align: center;
+        width: 100%;
+        .bonuses_heading{
+            h2{
+                color: $white-color;
+                font-size: 3.75rem;
+                font-weight: bolder;
+                padding: 0 20rem;
+                line-height: 4.375rem;
+            }
+        }
+        .bonuses_btn{
+            padding: 1rem 0;
+        }
+    }
+}
+
+// cards
+.bonuses_card_bg{
+    background-color: #1f0644;
+    background-image: url(/images/bg-s3.png);
+    background-repeat: repeat;
+    padding: 7rem 0;
+    .bounses_card_block{
+       display: flex;
+       justify-content: space-between;
+         padding: 2rem 0;
+        .bonuses_card{
+            border: 1px solid #483669;
+            padding: 2rem;
+            border-radius: 0.375rem;
+            .bounses_text{
+                text-align: center;
+                h4{
+                    padding: 1rem 0;
+                    color: $white-blue;
+
+                }
+                a{
+                    color: $white-blue;
+                    border: 1px solid #483669;
+                    padding: 0.5rem 1rem; 
+                    border-radius: 5rem;
+                    &::before{
+                        @include icons($icon: "\f0c0");
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// 
+.get_bonuse_bg{
+    background-color: $purple-color-bg;
+    padding: 4rem 0;
+    .get_bonuse{
+        text-align: center;
+        .get_bonuse_heading{
+            h2{
+                color: $white-color;
+
+            }
+            p{
+                padding: 1rem 0;
+                color: #cdd0f0;
+                font-size: 1.125rem;
+            }
+        }
+        .get_bonuse_card{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2rem 0;
+            .get_card{
+                .get_card_img{
+                    height: 100%;
+                    img{
+                        
+                    }
+                }
+                .get_txt{
+                    p{
+                        color: $white-color;
+                        a{
+                            color: #00a2ff;
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

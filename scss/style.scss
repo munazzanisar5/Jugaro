@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0b122e; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fea036; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:   #fa009f;
+  }
+::selection {
+    color: gold;
+    background: teal;
+  }
+
+
+.container{
+    max-width: 1200px !important;
+    width: 100%;
+    margin: 0 auto;
+}
+$border_radius: 0.625rem;
+h2{
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+}
+@import "../scss/scssPages/home.scss";
+@import "../scss/partial/button.scss";
+@import "../scss/partial/input.scss";
+@import "../scss/partial/maxin.scss";
+@import "../scss/partial/colors.scss";
+@import "../scss/components/footer.scss";
+@import "../scss/components/header.scss";
+@import "../scss/scssPages/turnments.scss";
+@import "../scss/scssPages/bones.scss";
+@import "../scss/scssPages/games_details.scss";
+@import "../scss/scssPages/reffles.scss";
+@import "../scss/scssPages/ticket-pages.scss";
+@import "../scss/scssPages/help.scss";
+@import "../scss/scssPages/404.scss";
+@import "../scss/scssPages/about.scss";
+@import "../scss/scssPages/raffles-details.scss";
+@import "../scss/scssPages/games.scss";
+@import "../scss/scssPages/tournment2.scss";
+@import "../scss/scssPages/gamer-profile-private.scss";
+@import "../scss/scssPages/gamer-profile.scss";
+@import "../scss/scssPages/gamer-menu.scss";
+@import "../scss/scssPages/contact.scss";
+@import "../scss/scssPages/mobile.scss";
+@import "../scss/scssPages/mobile-768.scss";
+@import "../scss/scssPages/tablet.scss";
+@import "../scss/scssPages/desktop-1024.scss";
+
+
+
+
+// .facebook{
+//     &::before{
+//         @include icons($icon: "  \f590");
+        
+        
+//     }
+    
+// }

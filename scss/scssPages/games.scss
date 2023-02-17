@@ -1,0 +1,351 @@
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+
+
+// VIP_club
+.VIP_club{
+    background: url(/images/games.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    text-align: center;
+    padding: 4rem 0;
+    .club{
+        .club_img{
+            padding-top: 4rem;
+        }
+        .club_heading{
+            padding: 2rem 0;
+            h2{
+                color: $white-color;
+            }
+        }
+    }
+}
+
+// club_bottom
+.club_bottom{
+    background-image: url(/images/counter-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 15px 15px -10px #00a2ff, inset 0px -15px 15px -10px #00a2ff;
+    .club_botom{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        .club_left_btn{
+            display: flex;
+            justify-content: flex-start;
+            gap: 0.5rem;
+            .club_btn{
+                button{
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    padding: 0.863rem 1.25rem;
+                    color: #00a2ff;
+                    box-shadow: inset 0px 0px 10px 7px #00a2ff;
+                    transition: all 0.3s ease-in;
+                    display: inline-block;
+                    &:nth-child(1){
+                        &::before{
+                            @include icons($icon: "\f185");
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            color: #00a2ff;
+                            padding-right: 0.5rem;
+                        }
+                    }
+                    &:nth-child(2){
+                        &::before{
+                            @include icons($icon: "\f523");
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            padding-right: 0.5rem;
+                        }
+                    }
+                    &:nth-child(3){
+                        &::before{
+                            @include icons($icon: "\f004");
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            padding-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+        .club_right{
+            flex-basis: 32rem;
+            .club_input{
+                
+                position: relative;
+                input {
+                    width: 100%;
+                    box-shadow: inset 0px 0px 7px 4px #00a2ff;
+                    &::placeholder {
+                        color: #837ad9;
+                        box-shadow: none;
+                    }
+                }
+                button {
+                    position: absolute;
+                    top: 0;
+                    right: -0.688rem;
+                    box-shadow: none;
+    
+                    &::before {
+                        @include icons($icon: "\f002");
+                        color: #837ad9;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: bold;
+                        font-size: 1.3rem;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+// prize_pool
+.prize_pool{
+    background-color: $purple-color-bg;
+    padding: 2rem 0;
+    .pool{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        .pool_left{
+            display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
+            .pool_left_contest{
+                color: #c8c3ff;
+                font-size: 1.5rem;
+                line-height: 2.125rem;
+                text-transform: uppercase;
+                padding: 2rem 0;
+            }
+            .BTC{
+                padding: 1rem 0;
+               
+                p{
+                    background-color: #2e0a63;
+                    padding: 10px 30px;
+                    color: $white-color;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    display: inline-block;
+                    &::before{
+                        content: "0.00051";
+                        color: $currency_color;
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .pool_center{
+            .pool_center_txt{
+                padding: 1rem 0;
+                small{
+                    font-size: 1rem;
+                    color: $white_blue;
+                    
+                }
+               
+
+               
+            }
+            .pool_center_btn{
+                button{
+                    box-shadow: inset 0px 0px 10px 7px #00a2ff;
+                    transition: all 0.3s ease-in;
+                    &:hover{
+                        box-shadow: inset 0px 0px 10px 7px #fea036;
+                    }
+                }
+            }
+        }
+
+        .pool_right{
+            background: #2e0a63;
+            padding: 40px 30px 40px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            .pool_winner_img{
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            .pool_right_txt{
+                padding: 1rem 0;
+                p{
+                    color: #c8c3ff;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    &::before{
+                        @include icons($icon: "\f521");
+                        font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            padding-right: 0.5rem;
+                    }
+                }
+            }
+            .pool_profile{
+                display: flex;
+                gap: 2rem;
+                padding-top: 2rem;
+                .pool_pro_img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    box-shadow: inset 0px 0px 4px 1px #daae37;
+                    border: 1px solid #daae37;
+                    background: #270b59;
+                    padding: 7px;
+                    position: relative;
+                    .crown{
+                        position: absolute;
+                        top: -16px;
+                        height: 19px;
+                        width: auto;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                .pool_pro_text{
+                    p{
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: $white_blue;
+                        font-weight: bold;
+                    }
+                    small{
+                        font-size: 0.875rem;
+                        font-weight: bold;
+                        color: $white-color;
+                        &::before{
+                            content: "0.00051";
+                            color: $currency_color;
+                            padding-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.play{
+    background-image: url(/images/games-details-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 7.5rem 0px 7.5rem;
+    position: relative;
+        .play_images{
+          
+            .left_img{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                z-index: 1;
+            }
+            .right_img{
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                z-index: 1;
+            }
+           
+            .paly_text{
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                p{
+                    font-size: 1.75rem;
+                    line-height: 2.375rem;
+                    font-weight: 700;
+                    color: $pink-color;
+                }
+                h2{
+                    color: $white-color;
+                    line-height: 4.375rem;
+                }
+                small{
+                    font-size: 1.125rem;
+                    color: $white-color;
+                }
+            }
+            .play_block{
+                padding: 3rem 0;
+            .play_games_block{
+                display: flex;
+                justify-content: space-between;
+                // padding: 3rem 0;
+                position: relative;
+                z-index: 2;
+    
+                .play_game_card{
+                    text-align: center;
+                    border-radius: 10px;
+                    box-shadow: inset 0px 0px 12px 7px $box_shadow;
+                    padding: 2.5rem 1.25rem;
+                    transition: all 0.3s ease-in;
+                    &:hover{
+                        transform: translateY(-5px);
+                        box-shadow: inset 0px 0px 12px 7px $box_shwdow_orange;
+                    }
+                    .play_card_btn{
+                        padding: 2rem 0;
+                    }
+                    small{
+                        color: $white-color;
+                        font-size: 1rem;
+                        line-height: 1.625rem;
+                    }
+                    .rank_members {
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 0.5rem;
+                        a {
+                            text-align: center;
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid #364374;
+                            border-radius: 50%;
+                            margin-right: -9px;
+        
+                            img {
+                                text-align: center;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+        
+                            &:nth-child(5) {
+                                padding: 0.3rem;
+                                color: $white_blue;
+                                background-color: $text_color;
+                                box-shadow: inset 0px 0px 7px 3px #9a13d2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+            .play_btn{
+                text-align: center;
+               
+            }
+        }
+       
+
+}

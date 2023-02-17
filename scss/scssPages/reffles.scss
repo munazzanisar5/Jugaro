@@ -1,0 +1,291 @@
+@import "../partial/button.scss";
+@import "../partial/input.scss";
+@import "../partial/maxin.scss";
+@import "../partial/colors.scss";
+
+
+// single product
+.single_product {
+    background-image: url(/images/raffles.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    padding: 10rem 0;
+
+    .single_product_heading{
+        padding: 2rem 0;
+
+        h2 {
+            font-size: 5rem;
+            color: $white-color;
+
+        }
+    }
+
+    .single_product_menu {
+        display: flex;
+        justify-content: start;
+        gap: 2rem;
+
+        p {
+            color: $white-color;
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+
+    }
+}
+
+// raffles
+.raffles{
+    background-image: url(/images/counter-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 15px 15px -10px #00a2ff, inset 0px -15px 15px -10px #00a2ff;
+    .raffles_content{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0;
+        .raffles_text{
+            display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
+            h3{
+                color: $white-color;
+                font-size: 1.5rem;
+                &:nth-child(1){
+                    border-right: 2px solid $white-color;
+                    padding-right: 2rem;
+                }
+            }
+        }
+        .raffles_ticket{
+            h3{
+                color: $white-color;
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+}
+
+// jetblack
+.jetblack{
+    background-color: $purple-color-bg;
+        .jectblack_block{
+            display: flex;
+            justify-content: space-between;
+            padding: 4rem 0;
+            .jetblock_images{
+                .jetblack_img{
+                    width: 39.563rem;
+                    img{
+                        width: 100%;
+                        border-radius: 0.625rem;
+                    }
+                }
+                .jetblack_product{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 1.8rem;
+                    padding: 2rem 0;
+                    width: 8.516rem;
+                
+                    img{
+                        width: 100%;
+                        border-radius: 0.625rem;
+                    }
+                }
+               
+            }
+            .jectblack_right{
+            .jetblack_details{
+                padding: 1.875rem 1.875rem 1.688rem;
+                border-radius: 0.625rem;
+                box-shadow: inset 0px 0px 8px 6px #00a2ff;
+                background: #310660;
+                p{
+                    color: $white-color;
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 1rem 0;
+                }
+                .timer_product{
+                    color: $light-blue;
+                    font-size: 3rem;
+                    color: $white_blue;
+                    font-weight: 600;
+                    line-height: 46px;
+                    text-shadow: 0px 0px 8px #00a2ff;
+                    font-weight: bold;
+                    display: flex;
+                    gap: 2rem;
+                    text-align: center;
+                    p{
+                        span{
+                            color: #ced0e2;
+                            font-size: 0.875rem;
+                            display: block;
+                            text-shadow: none;
+                            line-height: 24px;
+                            font-weight: 400;
+                            text-align: center;
+    
+                        }
+                    }
+                    
+                }
+                .bar{
+                    .numbers {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                        color: #fff;
+                        margin-bottom: 6px;
+                    }
+                    .top-bar {
+                        position: relative;
+                        .progress-bar {
+                            position: absolute;
+                            width: 0.7rem;
+                            height: 7px;
+                            background: #ea842a;
+                            border-radius: 50px;
+                            .main-bar {
+                                background: #400a73;
+                                height: 7px;
+                                width: 100%;
+                                border-radius: 50px;
+                            }
+                        }
+                    }
+                }
+                
+                .tickets{
+                    padding: 2rem 0;
+                    &::before{
+                        @include icons($icon: "\f3ff");
+                        font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            color: $green_color;
+                    }
+                    small{
+                        font-size: 0.875rem;
+                        color: $green_color;
+                    }
+                }
+                .tickets_text{
+                    text-align: center;
+                    border-top: 1px solid #613788;
+                    border-bottom: 1px solid #613788;
+                    padding: 1rem 0;
+                    h3{
+                        color: $white-color;
+                        font-size: 2.25rem;
+                    }
+                    small{
+                        font-size: 1rem;
+                        color: $white_blue;
+                    }
+                }
+                .tickets_btn{
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    padding: 2rem 0;
+                    .price_quality {
+                        display: flex;
+                        justify-content: center;
+                        gap: 0.5rem;
+                        padding: 0.2rem;
+                        border: 1px solid #584395;
+                        border-radius: 6rem;
+        
+                        span {
+                            width: 25px;
+                            height: 25px;
+                            border: 1px solid rgba(255, 255, 255, 0.18);
+                            border-radius: 6rem;
+                            padding: 0.2rem 0.33rem 0.1rem;
+        
+                            &::before {
+                                @include icons($icon: "\f068");
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+        
+                            }
+        
+                            &:nth-child(2) {
+                                &::after {
+                                    @include icons($icon: "\f067");
+                                }
+                            }
+        
+                        }
+        
+                        small {
+                            color: #00a2ff;
+                            font-size: 1rem;
+                            text-shadow: 0px 0px 10px #00a2ff, 0px 0px 10px #00a2ff;
+                        }
+                    }
+                    button{
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        line-height: 32px;
+                        box-shadow: inset 0px 0px 8px 3px #fea036;
+                        padding: 0 20px;
+                    }
+                }
+            }
+            .product_feature{
+                padding: 3rem 0;
+                
+                h6{
+                    font-size: 1.3rem;
+                    line-height: 1.625rem;
+                    color: $white-color;
+                    &::before{
+                        @include icons($icon: "\f00c");
+                        font-size: 1.5rem;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: $green_color;
+                        padding-right: 1.5rem;
+                    }
+                }
+            }
+        }
+        }
+     
+}
+
+// hyperX
+.hyperX{
+    background-color: $purple-color-bg;
+    .hyper{
+        padding: 0 0 5rem 0;
+        h2{
+            font-size: 2.25rem;
+            font-weight: bold;
+            color: $white-color;
+            padding: 2rem 0;
+        }
+        h4{
+            font-size: 1.75rem;
+            color: $white-color;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.125rem;
+            color: $white-color;
+            font-weight: 600;
+            padding: 2rem  40rem 0 0;
+        }
+    }
+}
+
