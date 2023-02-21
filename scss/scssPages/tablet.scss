@@ -98,9 +98,15 @@
 
 
     .leadboard {
+        .champians {
+            justify-content: space-evenly !important;
+            .champians_block{
+                gap: 1rem !important;
+                padding: 0 !important;
+            }
+        }
         .champina_details_block {
             @include flex_direction_mobile;
-
             .champians_detail {
                 width: 90%;
 

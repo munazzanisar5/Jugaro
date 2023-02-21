@@ -274,8 +274,18 @@ input {
 }
 .header .overlay .bottom_nav .menu .drop_icon {
   padding-left: 1rem;
+  display: block;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon::after {
+.header .overlay .bottom_nav .menu .drop_icon p:hover {
+  color: #fa009f;
+  text-shadow: 0px 0px 10px #bf0b2d;
+  cursor: pointer;
+}
+.header .overlay .bottom_nav .menu .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -297,8 +307,8 @@ input {
   border-top: 4px solid #fa009f;
   transition: all linear 0.3s;
   position: absolute;
-  top: 3.6rem;
-  left: -6.1rem;
+  top: 2rem;
+  left: 0.9rem;
   z-index: 3;
 }
 .header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
@@ -360,7 +370,7 @@ input {
   text-align: center;
 }
 .rewards .rewards_bg_coins .reward .rewards_img {
-  width: 60rem;
+  width: 50rem;
   margin: 0 auto;
 }
 .rewards .rewards_bg_coins .reward .rewards_img img {

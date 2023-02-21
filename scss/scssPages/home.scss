@@ -266,19 +266,32 @@
 
                 .drop_icon {
                     padding-left: 1rem;
+                    display: block;
+                    color: #ffffff;
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    transition: all linear 0.3s;
 
-                    &::after {
-                        @include icons($icon: "\f0d7");
-                        font-family: "Font Awesome 5 Free";
-                        font-weight: 900;
-                        padding-left: 0.5rem;
+                    p {
+                        &:hover {
+                            color: $pink-color;
+                            text-shadow: 0px 0px 10px #bf0b2d;
+                            cursor: pointer;
+                        }
 
+                        &::after {
+                            @include icons($icon: "\f0d7");
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            padding-left: 0.5rem;
+
+                        }
                     }
                 }
 
                 .nav_dropdown {
                     position: relative;
-
+                    // display: none;
 
                     .more_pages {
                         display: flex;
@@ -289,8 +302,8 @@
                         border-top: 4px solid #fa009f;
                         transition: all linear 0.3s;
                         position: absolute;
-                        top: 3.6rem;
-                        left: -6.1rem;
+                        top: 2rem;
+                        left: 0.9rem;
                         z-index: 3;
 
                         a {
@@ -357,7 +370,7 @@
     .rewards_bg_coins {
         background: url(/images/h2-shape.png);
         z-index: 1;
-        
+
         @extend .background_images;
         position: relative;
         animation-iteration-count: infinite;
@@ -377,7 +390,7 @@
             }
 
             .rewards_img {
-                width: 60rem;
+                width: 50rem;
                 margin: 0 auto;
 
                 img {
