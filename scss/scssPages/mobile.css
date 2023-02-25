@@ -274,8 +274,18 @@ input {
 }
 .header .overlay .bottom_nav .menu .drop_icon {
   padding-left: 1rem;
+  display: block;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon::after {
+.header .overlay .bottom_nav .menu .drop_icon p:hover {
+  color: #fa009f;
+  text-shadow: 0px 0px 10px #bf0b2d;
+  cursor: pointer;
+}
+.header .overlay .bottom_nav .menu .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -297,8 +307,8 @@ input {
   border-top: 4px solid #fa009f;
   transition: all linear 0.3s;
   position: absolute;
-  top: 3.6rem;
-  left: -6.1rem;
+  top: 2rem;
+  left: 0.9rem;
   z-index: 3;
 }
 .header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
@@ -349,6 +359,8 @@ input {
   background: url(/images/h2-shape.png);
   z-index: 1;
   position: relative;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 .rewards .rewards_bg_coins .reward {
   padding: 6rem;
@@ -358,7 +370,7 @@ input {
   text-align: center;
 }
 .rewards .rewards_bg_coins .reward .rewards_img {
-  width: 60rem;
+  width: 50rem;
   margin: 0 auto;
 }
 .rewards .rewards_bg_coins .reward .rewards_img img {
@@ -805,7 +817,7 @@ input {
   font-size: 2rem;
 }
 .subscribe .subscribe_block .subscribe_imges .subscribe_input {
-  padding: 2rem 16rem;
+  padding: 2rem 20rem;
   width: 100%;
   position: relative;
 }
@@ -2439,6 +2451,7 @@ input {
   background-image: url(/images/s1.png);
   background-repeat: no-repeat;
   position: relative;
+  z-index: 1;
 }
 .favorite_games .about_images {
   background-image: url(/images/right-image.png);
@@ -2446,6 +2459,7 @@ input {
   background-position: left;
   background-repeat: no-repeat;
   position: absolute;
+  z-index: -2;
   top: 7rem;
   right: 0;
   width: 22rem;
@@ -4773,7 +4787,7 @@ input {
     gap: 2rem;
   }
   .daily .daily_prize .daily_prize_card:nth-child(1),
-.daily .daily_prize .daily_prize_card:nth-child(2) {
+  .daily .daily_prize .daily_prize_card:nth-child(2) {
     border-right: none;
     padding-right: 0;
   }
@@ -4792,7 +4806,7 @@ input {
     width: 100%;
   }
   .play .play_images .left_img,
-.play .play_images .right_img {
+  .play .play_images .right_img {
     display: none;
   }
   .play .play_images .play_games_block {
@@ -4863,7 +4877,7 @@ input {
     width: 90%;
   }
   .subscribe .subscribe_block .subscribe_imges .left_img,
-.subscribe .subscribe_block .subscribe_imges .right_img {
+  .subscribe .subscribe_block .subscribe_imges .right_img {
     display: none;
   }
   .subscribe .subscribe_block .subscribe_imges .subscribe_input {

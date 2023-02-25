@@ -30,7 +30,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .activities, .booyah, .player_rank, .games_details, .bonuses, .subscribe .subscribe_block, .winner, .play, .daily, .rewards {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .activities, .booyah, .player_rank, .games_details, .bonuses, .subscribe .subscribe_block, .winner, .play, .daily, .rewards .rewards_bg_coins, .rewards {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -274,8 +274,18 @@ input {
 }
 .header .overlay .bottom_nav .menu .drop_icon {
   padding-left: 1rem;
+  display: block;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon::after {
+.header .overlay .bottom_nav .menu .drop_icon p:hover {
+  color: #fa009f;
+  text-shadow: 0px 0px 10px #bf0b2d;
+  cursor: pointer;
+}
+.header .overlay .bottom_nav .menu .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -297,8 +307,8 @@ input {
   border-top: 4px solid #fa009f;
   transition: all linear 0.3s;
   position: absolute;
-  top: 3.6rem;
-  left: -6.1rem;
+  top: 2rem;
+  left: 0.9rem;
   z-index: 3;
 }
 .header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
@@ -343,23 +353,30 @@ input {
 .rewards {
   background-image: url(/images/h1.jpg);
   position: relative;
-  padding: 27.188rem 0px 18.75rem;
+  padding: 16.188rem 0px 13.75rem;
 }
-.rewards .reward {
-  padding: 4rem;
+.rewards .rewards_bg_coins {
+  background: url(/images/h2-shape.png);
+  z-index: 1;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
-.rewards .reward .rewards_title h2 {
+.rewards .rewards_bg_coins .reward {
+  padding: 6rem;
+}
+.rewards .rewards_bg_coins .reward .rewards_title h2 {
   color: #ffffff;
   text-align: center;
 }
-.rewards .reward .rewards_img {
-  width: 60rem;
+.rewards .rewards_bg_coins .reward .rewards_img {
+  width: 50rem;
   margin: 0 auto;
 }
-.rewards .reward .rewards_img img {
+.rewards .rewards_bg_coins .reward .rewards_img img {
   width: 100%;
 }
-.rewards .reward .reward_btn {
+.rewards .rewards_bg_coins .reward .reward_btn {
   text-align: center;
 }
 
@@ -432,7 +449,7 @@ input {
   justify-content: space-between;
   padding: 3rem 0;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .play .play_images .play_games_block .play_game_card {
   text-align: center;
@@ -503,17 +520,20 @@ input {
   margin-bottom: 10px;
   padding: 1.25rem 0px 1.25rem;
 }
-.leadboard .champina_details_block .champians_detail .champians_levels .level_img, .leadboard .champina_details_block .champians_detail .champians_levels .BTC_img {
+.leadboard .champina_details_block .champians_detail .champians_levels .level_img,
+.leadboard .champina_details_block .champians_detail .champians_levels .BTC_img {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-.leadboard .champina_details_block .champians_detail .champians_levels .level_img h6, .leadboard .champina_details_block .champians_detail .champians_levels .BTC_img h6 {
+.leadboard .champina_details_block .champians_detail .champians_levels .level_img h6,
+.leadboard .champina_details_block .champians_detail .champians_levels .BTC_img h6 {
   color: #ffffff;
   font-size: 1rem;
   padding-top: 2rem;
 }
-.leadboard .champina_details_block .champians_detail .champians_levels .level_img h5, .leadboard .champina_details_block .champians_detail .champians_levels .BTC_img h5 {
+.leadboard .champina_details_block .champians_detail .champians_levels .level_img h5,
+.leadboard .champina_details_block .champians_detail .champians_levels .BTC_img h5 {
   color: #fcc310;
   font-size: 1.3rem;
   padding: 2rem 1.5rem 0 1.5rem;
@@ -627,7 +647,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .activities, .booyah, .player_rank, .games_details, .bonuses, .subscribe .subscribe_block, .rewards, .daily, .play, .winner {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .activities, .booyah, .player_rank, .games_details, .bonuses, .subscribe .subscribe_block, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -665,7 +685,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .activities, .booyah, .player_rank, .games_details, .bonuses, .subscribe .subscribe_block, .rewards, .daily, .play, .winner {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .activities, .booyah, .player_rank, .games_details, .bonuses, .subscribe .subscribe_block, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -797,7 +817,7 @@ input {
   font-size: 2rem;
 }
 .subscribe .subscribe_block .subscribe_imges .subscribe_input {
-  padding: 2rem 16rem;
+  padding: 2rem 20rem;
   width: 100%;
   position: relative;
 }
@@ -839,7 +859,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .activities, .booyah, .player_rank, .games_details, .bonuses, .rewards, .daily, .play, .winner, .subscribe .subscribe_block {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .activities, .booyah, .player_rank, .games_details, .bonuses, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1100,7 +1120,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .activities, .booyah, .player_rank, .games_details, .bonuses, .rewards, .daily, .play, .winner, .subscribe .subscribe_block {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .activities, .booyah, .player_rank, .games_details, .bonuses, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1235,7 +1255,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .activities, .booyah, .player_rank, .games_details, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .activities, .booyah, .player_rank, .games_details, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1673,7 +1693,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1976,7 +1996,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2201,7 +2221,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2335,7 +2355,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2398,7 +2418,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .comunity, .expert, .amazing, .about_product, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2406,9 +2426,6 @@ input {
 
 .about_product {
   background-image: url(/images/about-bc.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
   padding: 10rem 0;
 }
 .about_product .about_product_heading {
@@ -2431,31 +2448,28 @@ input {
 
 .favorite_games {
   background-color: #0b122e;
+  background-image: url(/images/s1.png);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.favorite_games .about_images {
+  background-image: url(/images/right-image.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -2;
+  top: 7rem;
+  right: 0;
+  width: 22rem;
+}
+.favorite_games .about_images img {
+  width: 100%;
+  margin: -7.813rem auto;
 }
 .favorite_games .favourite {
-  position: relative;
   padding: 112px 0px 120px;
-}
-.favorite_games .favourite .s2_1 {
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 70%;
-}
-.favorite_games .favourite .s2_2 {
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 70%;
-}
-.favorite_games .favourite .right-image {
-  position: absolute;
-  right: 70px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -150px;
 }
 .favorite_games .favourite .favorite_games_block .favourit_text {
   width: 50%;
@@ -2516,7 +2530,7 @@ input {
 }
 .amazing .amazing_text {
   position: relative;
-  z-index: 0;
+  z-index: 1;
   text-align: center;
 }
 .amazing .amazing_text p {
@@ -2727,7 +2741,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .amazing, .expert, .comunity {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .raffles, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .about_product, .amazing, .expert, .comunity {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2983,7 +2997,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .amazing, .expert, .comunity, .raffles {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .about_product, .amazing, .expert, .comunity, .raffles {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3345,7 +3359,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .amazing, .expert, .comunity, .raffles {
+.background_images, .contacts, .contact, .profile_private, .tournment_two, .tournment_2, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .about_product, .amazing, .expert, .comunity, .raffles {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3618,7 +3632,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .profile_private, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .amazing, .expert, .comunity, .raffles, .tournment_2, .tournment_two {
+.background_images, .contacts, .contact, .profile_private, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .about_product, .amazing, .expert, .comunity, .raffles, .tournment_2, .tournment_two {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4101,7 +4115,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .amazing, .expert, .comunity, .raffles, .tournment_2, .tournment_two, .profile_private {
+.background_images, .contacts, .contact, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .about_product, .amazing, .expert, .comunity, .raffles, .tournment_2, .tournment_two, .profile_private {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4420,7 +4434,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .amazing, .expert, .comunity, .raffles, .tournment_2, .tournment_two, .profile_private {
+.background_images, .contacts, .contact, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .about_product, .amazing, .expert, .comunity, .raffles, .tournment_2, .tournment_two, .profile_private {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4603,7 +4617,7 @@ input {
   outline: none;
 }
 
-.background_images, .contacts, .contact, .rewards, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .amazing, .expert, .comunity, .raffles, .tournment_2, .tournment_two, .profile_private {
+.background_images, .contacts, .contact, .rewards, .rewards .rewards_bg_coins, .daily, .play, .winner, .subscribe .subscribe_block, .bonuses, .games_details, .player_rank, .booyah, .activities, .about_product, .amazing, .expert, .comunity, .raffles, .tournment_2, .tournment_two, .profile_private {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

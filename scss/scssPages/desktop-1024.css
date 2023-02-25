@@ -370,7 +370,7 @@ input {
   text-align: center;
 }
 .rewards .rewards_bg_coins .reward .rewards_img {
-  width: 60rem;
+  width: 50rem;
   margin: 0 auto;
 }
 .rewards .rewards_bg_coins .reward .rewards_img img {
@@ -4767,9 +4767,10 @@ input {
   font-size: 1.2rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 960px !important;
+    width: 100%;
   }
   .rewards .rewards_bg_coins .reward .rewards_img {
     width: 50rem;
@@ -4777,15 +4778,18 @@ input {
   .daily .daily_prize {
     justify-content: space-evenly;
   }
+  .daily .daily_prize .daily_prize_card {
+    gap: 0.5rem !important;
+  }
   .play .play_images .play_games_block .play_game_card {
-    padding: 2.5rem 0.25rem;
+    padding: 2.5rem 0.25rem !important;
   }
   .leadboard .champians {
     gap: 1rem;
   }
   .leadboard .champians .champians_block {
-    gap: 1rem;
-    padding: 0;
+    gap: 1rem !important;
+    padding: 0 !important;
   }
   .leadboard .champina_details_block .champians_detail .champians_levels {
     gap: 1rem !important;
