@@ -316,7 +316,7 @@ input {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
 }
-.header .overlay .bottom_nav .menu .drop_icon {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon {
   padding-left: 1rem;
   display: block;
   color: #ffffff;
@@ -324,12 +324,12 @@ input {
   font-weight: bold;
   transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon p:hover {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p:hover {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
   cursor: pointer;
 }
-.header .overlay .bottom_nav .menu .drop_icon p::after {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -339,10 +339,11 @@ input {
   font-weight: 900;
   padding-left: 0.5rem;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown {
   position: relative;
+  display: none;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages {
   display: flex;
   flex-direction: column;
   width: 15rem;
@@ -355,11 +356,11 @@ input {
   left: 0.9rem;
   z-index: 3;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a::before {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a::before {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -368,6 +369,9 @@ input {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 0.5rem;
+}
+.header .overlay .bottom_nav .menu .nav_btn {
+  text-align: center;
 }
 .header .overlay .bottom_nav .logo {
   position: relative;
@@ -922,6 +926,8 @@ input {
 .mobile_navbar .mobile_nav .mobile_nav_bar .hamburg {
   width: 100%;
   padding: 1rem 0;
+  position: relative;
+  z-index: 999;
 }
 .mobile_navbar .mobile_nav .mobile_nav_bar .hamburg span {
   display: block;
@@ -932,13 +938,16 @@ input {
   margin: 0.4rem;
 }
 .mobile_navbar .mobile_nav .mobile_nav_bar .menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
-  background: linear-gradient(-90deg, rgba(84, 6, 143, 0.5) 0%, rgba(122, 27, 180, 0.5) 100%);
+  gap: 1rem;
+  padding: 5rem 0;
   position: absolute;
-  top: 0;
+  top: 0rem;
   left: 0;
+  z-index: 99;
+  background-color: #250752;
 }
 .mobile_navbar .mobile_nav .mobile_nav_bar .menu a {
   text-align: center;
@@ -950,6 +959,64 @@ input {
 .mobile_navbar .mobile_nav .mobile_nav_bar .menu a:hover {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
+}
+.mobile_navbar .mobile_nav .mobile_nav_bar .menu .page_drop1 .drop_icon {
+  padding-left: 1rem;
+  display: block;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all linear 0.3s;
+  text-align: center;
+}
+.mobile_navbar .mobile_nav .mobile_nav_bar .menu .page_drop1 .drop_icon p:hover {
+  color: #fa009f;
+  text-shadow: 0px 0px 10px #bf0b2d;
+  cursor: pointer;
+}
+.mobile_navbar .mobile_nav .mobile_nav_bar .menu .page_drop1 .drop_icon p::after {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-left: 0.5rem;
+}
+.mobile_navbar .mobile_nav .mobile_nav_bar .menu .page_drop1 .nav_dropdown1 {
+  position: relative;
+  display: none;
+}
+.mobile_navbar .mobile_nav .mobile_nav_bar .menu .page_drop1 .nav_dropdown1 .more_pages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1f0644;
+  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+  border-top: 4px solid #fa009f;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  top: 1rem;
+  left: 0rem;
+  z-index: 3;
+}
+.mobile_navbar .mobile_nav .mobile_nav_bar .menu .page_drop1 .nav_dropdown1 .more_pages a {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mobile_navbar .mobile_nav .mobile_nav_bar .menu .page_drop1 .nav_dropdown1 .more_pages a::before {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f101";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 0.5rem;
+}
+.mobile_navbar .mobile_nav .mobile_nav_bar .menu .nav_btn {
+  text-align: center;
 }
 .mobile_navbar .mobile_nav .mobile_logo {
   width: 8rem;
@@ -1276,7 +1343,6 @@ input {
   color: #ffffff;
   font-size: 3.75rem;
   font-weight: bolder;
-  padding: 0 20rem;
   line-height: 4.375rem;
 }
 .bonuses .bonuses_content .bonuses_btn {
@@ -2626,6 +2692,7 @@ input {
 .favorite_games .favourite .favorite_games_block .VIP_players {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 2rem 0;
   gap: 2rem;
 }
@@ -5172,7 +5239,7 @@ input {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
 }
-.header .overlay .bottom_nav .menu .drop_icon {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon {
   padding-left: 1rem;
   display: block;
   color: #ffffff;
@@ -5180,12 +5247,12 @@ input {
   font-weight: bold;
   transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon p:hover {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p:hover {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
   cursor: pointer;
 }
-.header .overlay .bottom_nav .menu .drop_icon p::after {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -5195,10 +5262,11 @@ input {
   font-weight: 900;
   padding-left: 0.5rem;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown {
   position: relative;
+  display: none;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages {
   display: flex;
   flex-direction: column;
   width: 15rem;
@@ -5211,11 +5279,11 @@ input {
   left: 0.9rem;
   z-index: 3;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a::before {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a::before {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -5224,6 +5292,9 @@ input {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 0.5rem;
+}
+.header .overlay .bottom_nav .menu .nav_btn {
+  text-align: center;
 }
 .header .overlay .bottom_nav .logo {
   position: relative;
@@ -6045,7 +6116,6 @@ input {
   color: #ffffff;
   font-size: 3.75rem;
   font-weight: bolder;
-  padding: 0 20rem;
   line-height: 4.375rem;
 }
 .bonuses .bonuses_content .bonuses_btn {
@@ -7395,6 +7465,7 @@ input {
 .favorite_games .favourite .favorite_games_block .VIP_players {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 2rem 0;
   gap: 2rem;
 }
@@ -10582,7 +10653,7 @@ input {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
 }
-.header .overlay .bottom_nav .menu .drop_icon {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon {
   padding-left: 1rem;
   display: block;
   color: #ffffff;
@@ -10590,12 +10661,12 @@ input {
   font-weight: bold;
   transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon p:hover {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p:hover {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
   cursor: pointer;
 }
-.header .overlay .bottom_nav .menu .drop_icon p::after {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -10605,10 +10676,11 @@ input {
   font-weight: 900;
   padding-left: 0.5rem;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown {
   position: relative;
+  display: none;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages {
   display: flex;
   flex-direction: column;
   width: 15rem;
@@ -10621,11 +10693,11 @@ input {
   left: 0.9rem;
   z-index: 3;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a::before {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a::before {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -10634,6 +10706,9 @@ input {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 0.5rem;
+}
+.header .overlay .bottom_nav .menu .nav_btn {
+  text-align: center;
 }
 .header .overlay .bottom_nav .logo {
   position: relative;
@@ -11455,7 +11530,6 @@ input {
   color: #ffffff;
   font-size: 3.75rem;
   font-weight: bolder;
-  padding: 0 20rem;
   line-height: 4.375rem;
 }
 .bonuses .bonuses_content .bonuses_btn {
@@ -12805,6 +12879,7 @@ input {
 .favorite_games .favourite .favorite_games_block .VIP_players {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 2rem 0;
   gap: 2rem;
 }
@@ -15835,7 +15910,7 @@ input {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
 }
-.header .overlay .bottom_nav .menu .drop_icon {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon {
   padding-left: 1rem;
   display: block;
   color: #ffffff;
@@ -15843,12 +15918,12 @@ input {
   font-weight: bold;
   transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon p:hover {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p:hover {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
   cursor: pointer;
 }
-.header .overlay .bottom_nav .menu .drop_icon p::after {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -15858,10 +15933,11 @@ input {
   font-weight: 900;
   padding-left: 0.5rem;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown {
   position: relative;
+  display: none;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages {
   display: flex;
   flex-direction: column;
   width: 15rem;
@@ -15874,11 +15950,11 @@ input {
   left: 0.9rem;
   z-index: 3;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a::before {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a::before {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -15887,6 +15963,9 @@ input {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 0.5rem;
+}
+.header .overlay .bottom_nav .menu .nav_btn {
+  text-align: center;
 }
 .header .overlay .bottom_nav .logo {
   position: relative;
@@ -16708,7 +16787,6 @@ input {
   color: #ffffff;
   font-size: 3.75rem;
   font-weight: bolder;
-  padding: 0 20rem;
   line-height: 4.375rem;
 }
 .bonuses .bonuses_content .bonuses_btn {
@@ -18058,6 +18136,7 @@ input {
 .favorite_games .favourite .favorite_games_block .VIP_players {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 2rem 0;
   gap: 2rem;
 }
@@ -21008,7 +21087,7 @@ input {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
 }
-.header .overlay .bottom_nav .menu .drop_icon {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon {
   padding-left: 1rem;
   display: block;
   color: #ffffff;
@@ -21016,12 +21095,12 @@ input {
   font-weight: bold;
   transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon p:hover {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p:hover {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
   cursor: pointer;
 }
-.header .overlay .bottom_nav .menu .drop_icon p::after {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -21031,10 +21110,11 @@ input {
   font-weight: 900;
   padding-left: 0.5rem;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown {
   position: relative;
+  display: none;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages {
   display: flex;
   flex-direction: column;
   width: 15rem;
@@ -21047,11 +21127,11 @@ input {
   left: 0.9rem;
   z-index: 3;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a::before {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a::before {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -21060,6 +21140,9 @@ input {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 0.5rem;
+}
+.header .overlay .bottom_nav .menu .nav_btn {
+  text-align: center;
 }
 .header .overlay .bottom_nav .logo {
   position: relative;
@@ -21881,7 +21964,6 @@ input {
   color: #ffffff;
   font-size: 3.75rem;
   font-weight: bolder;
-  padding: 0 20rem;
   line-height: 4.375rem;
 }
 .bonuses .bonuses_content .bonuses_btn {
@@ -23231,6 +23313,7 @@ input {
 .favorite_games .favourite .favorite_games_block .VIP_players {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 2rem 0;
   gap: 2rem;
 }
@@ -25530,6 +25613,9 @@ input {
   .leadboard .champina_details_block .champians_detail .champians_levels {
     gap: 1rem !important;
   }
+  .ticket .ticket_block {
+    gap: 2rem;
+  }
   .daily_prized .daily_prized_block .daily_prized_card .prized_card_img {
     width: 100%;
   }
@@ -25868,7 +25954,7 @@ input {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
 }
-.header .overlay .bottom_nav .menu .drop_icon {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon {
   padding-left: 1rem;
   display: block;
   color: #ffffff;
@@ -25876,12 +25962,12 @@ input {
   font-weight: bold;
   transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon p:hover {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p:hover {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
   cursor: pointer;
 }
-.header .overlay .bottom_nav .menu .drop_icon p::after {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -25891,10 +25977,11 @@ input {
   font-weight: 900;
   padding-left: 0.5rem;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown {
   position: relative;
+  display: none;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages {
   display: flex;
   flex-direction: column;
   width: 15rem;
@@ -25907,11 +25994,11 @@ input {
   left: 0.9rem;
   z-index: 3;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a::before {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a::before {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -25920,6 +26007,9 @@ input {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 0.5rem;
+}
+.header .overlay .bottom_nav .menu .nav_btn {
+  text-align: center;
 }
 .header .overlay .bottom_nav .logo {
   position: relative;
@@ -26741,7 +26831,6 @@ input {
   color: #ffffff;
   font-size: 3.75rem;
   font-weight: bolder;
-  padding: 0 20rem;
   line-height: 4.375rem;
 }
 .bonuses .bonuses_content .bonuses_btn {
@@ -28091,6 +28180,7 @@ input {
 .favorite_games .favourite .favorite_games_block .VIP_players {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 2rem 0;
   gap: 2rem;
 }

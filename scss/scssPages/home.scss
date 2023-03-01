@@ -264,6 +264,8 @@
 
                 }
 
+                .page_drop{
+                 
                 .drop_icon {
                     padding-left: 1rem;
                     display: block;
@@ -271,7 +273,7 @@
                     font-size: 1.25rem;
                     font-weight: bold;
                     transition: all linear 0.3s;
-
+                   
                     p {
                         &:hover {
                             color: $pink-color;
@@ -291,7 +293,7 @@
 
                 .nav_dropdown {
                     position: relative;
-                    // display: none;
+                    display: none;
 
                     .more_pages {
                         display: flex;
@@ -319,6 +321,10 @@
                         }
                     }
                 }
+            }
+            .nav_btn{
+                text-align: center;
+            }
             }
 
             .logo {

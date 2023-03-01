@@ -107,6 +107,7 @@ input {
 .favorite_games .favourite .favorite_games_block .VIP_players {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 2rem 0;
   gap: 2rem;
 }

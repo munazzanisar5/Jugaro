@@ -272,7 +272,7 @@ input {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
 }
-.header .overlay .bottom_nav .menu .drop_icon {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon {
   padding-left: 1rem;
   display: block;
   color: #ffffff;
@@ -280,12 +280,12 @@ input {
   font-weight: bold;
   transition: all linear 0.3s;
 }
-.header .overlay .bottom_nav .menu .drop_icon p:hover {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p:hover {
   color: #fa009f;
   text-shadow: 0px 0px 10px #bf0b2d;
   cursor: pointer;
 }
-.header .overlay .bottom_nav .menu .drop_icon p::after {
+.header .overlay .bottom_nav .menu .page_drop .drop_icon p::after {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -295,10 +295,11 @@ input {
   font-weight: 900;
   padding-left: 0.5rem;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown {
   position: relative;
+  display: none;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages {
   display: flex;
   flex-direction: column;
   width: 15rem;
@@ -311,11 +312,11 @@ input {
   left: 0.9rem;
   z-index: 3;
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header .overlay .bottom_nav .menu .nav_dropdown .more_pages a::before {
+.header .overlay .bottom_nav .menu .page_drop .nav_dropdown .more_pages a::before {
   font-weight: 500;
   font-size: 1rem;
   color: #ffffff;
@@ -324,6 +325,9 @@ input {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 0.5rem;
+}
+.header .overlay .bottom_nav .menu .nav_btn {
+  text-align: center;
 }
 .header .overlay .bottom_nav .logo {
   position: relative;
@@ -2495,6 +2499,7 @@ input {
 .favorite_games .favourite .favorite_games_block .VIP_players {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 2rem 0;
   gap: 2rem;
 }

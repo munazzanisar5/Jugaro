@@ -90,6 +90,12 @@
         }
     }
     
+    // tickets
+    .ticket {
+        .ticket_block{
+            gap: 2rem;
+        }
+    }
     // about
     .daily_prized {
         .daily_prized_block {
@@ -120,6 +126,7 @@
     }
 
     // bonuse
+ 
     .bonuses_card_bg {
         .bounses_card_block {
             .bonuses_card{

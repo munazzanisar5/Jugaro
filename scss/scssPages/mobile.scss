@@ -234,7 +234,8 @@
                 }
 
                 .VIP_players {
-                    @include flex_direction_mobile;
+                    @include flex_direction_mobile ;
+                    
 
                     .VIP_block {
                         @include flex_direction_mobile;
