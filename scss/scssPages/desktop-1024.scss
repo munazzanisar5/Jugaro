@@ -178,7 +178,8 @@
     .club_bottom {
         .club_botom {
             .club_right {
-                flex-basis: 27rem;
+                flex-basis: auto !important;
+                padding-top: 1rem !important;
             }
         }
     }

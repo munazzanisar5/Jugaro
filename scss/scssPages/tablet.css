@@ -4899,6 +4899,17 @@ input {
   .activities .activities_block {
     flex-direction: column;
   }
+  .club_bottom .club_botom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .club_bottom .club_botom .club_right {
+    flex-basis: auto;
+  }
+  .prize_pool .pool {
+    flex-direction: column;
+    align-items: center;
+  }
   .profile_private .profile_private_menu {
     justify-content: center !important;
   }

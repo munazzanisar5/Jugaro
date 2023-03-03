@@ -4980,9 +4980,29 @@ input {
   .comunity .community_jugaro .jugaro_content {
     padding: 0 2rem;
   }
+  .VIP_club .club .club_img {
+    width: 100%;
+  }
+  .VIP_club .club .club_img img {
+    width: 100%;
+  }
+  .club_bottom .club_botom .club_left_btn {
+    flex-direction: column;
+    align-items: center;
+  }
   .games-details .details-wrapper .right-content .price-box .price-pool-area {
     flex-direction: column;
     align-items: center;
+  }
+  .prize_pool .pool .pool_left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prize_pool .pool .pool_left .pool_left_contest {
+    text-align: center;
+  }
+  .prize_pool .pool .pool_center {
+    padding: 1rem 0 !important;
   }
   .player_rank .player_rank_block {
     flex-direction: column;

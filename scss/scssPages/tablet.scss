@@ -245,6 +245,22 @@
     }
 
 
+    // games
+    .club_bottom {
+        .club_botom{
+            flex-direction: column;
+            align-items: center;
+            .club_right{
+                flex-basis: auto;
+            }
+        }
+    }
+    .prize_pool {
+        .pool{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     // gamer profile
     .profile_private {
        
