@@ -1,4 +1,5 @@
 button {
+  cursor: pointer;
   background: transparent;
   text-transform: uppercase;
   font-weight: 600;
@@ -27,6 +28,12 @@ input {
   border: 0px;
   padding: 0px 60px 0px 30px;
   outline: none;
+}
+
+.background_images {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .VIP_club {
@@ -161,7 +168,6 @@ input {
   padding: 1rem 0;
 }
 .prize_pool .pool .pool_left .BTC p {
-  background-color: #2e0a63;
   padding: 10px 30px;
   color: #ffffff;
   font-weight: 700;

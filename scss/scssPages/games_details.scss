@@ -155,13 +155,13 @@
     .booyah_block {
         padding: 3.5rem ;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 2rem;
         border-radius: 1.875rem;
         box-shadow: inset 0px 0px 10px 5px #00a2ff, 0px 0px 10px #00a2ff;
 
         .booyah_card {
-            flex-basis: 20rem;
+            flex-basis: auto;
             text-align: center;
             .booyah_btn{
                 padding: 2rem 0;
@@ -192,7 +192,7 @@
         }
 
         .booyah_player_details {
-            flex-basis: 30rem;
+            flex-basis: 20rem;
             box-shadow: inset 0px 0px 10px 5px #00a2ff, 0px 0px 10px #00a2ff;
             padding: 3rem 2rem;
             border-radius: 1.875rem;
@@ -253,7 +253,7 @@
                     font-size: 3.375rem;
                 }
             }
-            .prize_pool{
+            .prize_pool_one{
                 border-top: 1px solid rgba(255, 255, 255, 0.2);
                 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                 padding: 2rem 0;
@@ -267,7 +267,7 @@
                         color: $white-color;
                         font-size: 1.5rem;
                         font-weight: bold;
-                        padding-top: 1rem;
+                        // padding-top: 1rem;
                     }
                 }
                 .prize_pool_right{

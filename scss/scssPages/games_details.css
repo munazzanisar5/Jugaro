@@ -163,13 +163,13 @@ input {
 .booyah .booyah_block {
   padding: 3.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   border-radius: 1.875rem;
   box-shadow: inset 0px 0px 10px 5px #00a2ff, 0px 0px 10px #00a2ff;
 }
 .booyah .booyah_block .booyah_card {
-  flex-basis: 20rem;
+  flex-basis: auto;
   text-align: center;
 }
 .booyah .booyah_block .booyah_card .booyah_btn {
@@ -195,7 +195,7 @@ input {
   font-size: 18px;
 }
 .booyah .booyah_block .booyah_player_details {
-  flex-basis: 30rem;
+  flex-basis: 20rem;
   box-shadow: inset 0px 0px 10px 5px #00a2ff, 0px 0px 10px #00a2ff;
   padding: 3rem 2rem;
   border-radius: 1.875rem;
@@ -253,7 +253,7 @@ input {
   color: #fa009f;
   font-size: 3.375rem;
 }
-.booyah .booyah_block .booyah_player_details .prize_pool {
+.booyah .booyah_block .booyah_player_details .prize_pool_one {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2rem 0;
@@ -261,19 +261,18 @@ input {
   justify-content: space-between;
   text-align: center;
 }
-.booyah .booyah_block .booyah_player_details .prize_pool .Prize_pool_left {
+.booyah .booyah_block .booyah_player_details .prize_pool_one .Prize_pool_left {
   gap: 1rem;
 }
-.booyah .booyah_block .booyah_player_details .prize_pool .Prize_pool_left p {
+.booyah .booyah_block .booyah_player_details .prize_pool_one .Prize_pool_left p {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
-  padding-top: 1rem;
 }
-.booyah .booyah_block .booyah_player_details .prize_pool .prize_pool_right {
+.booyah .booyah_block .booyah_player_details .prize_pool_one .prize_pool_right {
   display: flex;
 }
-.booyah .booyah_block .booyah_player_details .prize_pool .prize_pool_right p {
+.booyah .booyah_block .booyah_player_details .prize_pool_one .prize_pool_right p {
   text-shadow: 0px 0px 10px #00a2ff, 0px 0px 10px #00a2ff;
   color: #00a2ff;
   font-size: 2rem;

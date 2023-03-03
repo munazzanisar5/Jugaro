@@ -60,6 +60,9 @@
         }
     }
 
+
+  
+
     .play {
         .play_images {
              .left_img , .right_img{
@@ -235,6 +238,17 @@
     }
 
 }
+
+
+.player_rank {
+    .player_rank_block{
+       flex-direction: column;
+       align-items: center;
+    }
+}
+// games_detail
+
+
 
 // gamer profile
 .profile_private {

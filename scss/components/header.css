@@ -66,11 +66,12 @@ input {
   width: 100%;
   gap: 1rem;
   padding: 5rem 0;
+  margin-top: 6rem;
   position: absolute;
   top: 0rem;
   left: 0;
   z-index: 99;
-  background-color: #250752;
+  background-image: linear-gradient(89deg, #54068f 0%, #7a1bb4 100%);
 }
 .mobile_navbar .mobile_nav .mobile_nav_bar .menu a {
   text-align: center;

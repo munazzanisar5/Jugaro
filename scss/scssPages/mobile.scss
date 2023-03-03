@@ -308,6 +308,88 @@
 
     }
 
+    // games_details
+
+    .games-details {
+        .details-wrapper {
+            .right-content {
+                .price-box{
+                    .price-pool-area{
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .player_rank {
+        .player_rank_block{
+           flex-direction: column;
+           align-items: center;
+           .rank_left{
+           flex-direction: column;
+           align-items: center;
+           }
+           .rank_right{
+            flex-direction: column;
+           align-items: center;
+           }
+        }
+    }
+
+    .booyah {
+        .booyah_block {
+            padding: 1rem !important;
+            .booyah_card{
+                .booyah_img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .booyah_player_details{
+                .prize_pool_one{
+                    flex-wrap: wrap;
+                    .prize_pool_right{
+                        flex-wrap: wrap;
+                    }
+                }
+                .price_quality{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    .activities {
+      
+        .activities_content {
+            .activities_btn{
+                flex-direction: column;
+                align-items: center;
+                
+            }
+        }
+        .activities_block{
+            padding: 50px 10px !important;
+            .activity_right {
+                .activity_card{
+                    flex-direction: column;
+                    align-items: center;
+                    .top_level_left{
+                        flex-direction: column;
+                    align-items: center;
+                    .top_member_profile{
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
     // gamer profile
     .profile_private {
         .profile_private_menu {

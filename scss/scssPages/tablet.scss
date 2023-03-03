@@ -61,6 +61,8 @@
         }
     }
 
+  
+
     .play {
         .play_images {
 
@@ -200,6 +202,48 @@
             }
         }
     }
+
+    // games_details
+
+    .games_details {
+        .games_details_heading{
+            text-align: center;
+        }
+        .games_menu{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .player_rank {
+        .player_rank_block{
+            justify-content: space-evenly !important;
+        }
+    }
+
+   
+    .booyah {
+        padding: 2rem !important;
+        .booyah_block{
+            flex-direction: column !important;
+            align-items: center !important;
+            .booyah_player_details{
+                width: 100%;
+            }
+            .booyah_text{
+                flex-basis: 0 !important;
+            }
+        }
+    }
+    .activities {
+        padding: 2rem !important;
+       
+        .activities_block{
+            flex-direction: column;
+           
+        }
+    }
+
 
     // gamer profile
     .profile_private {
