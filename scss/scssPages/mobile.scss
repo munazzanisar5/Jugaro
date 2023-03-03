@@ -565,6 +565,9 @@
             width: 90%;
             .contact_blocks{
                 @include flex_direction_mobile;
+                .contact_left{
+                    padding: 2.5rem 0.87rem !important;
+                }
                 .contact_right {
                     .contact_inf  {
                         @include flex_direction_mobile;

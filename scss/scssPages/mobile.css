@@ -5179,6 +5179,9 @@ input {
     align-items: center;
     gap: 2rem;
   }
+  .contacts .contact_block .contact_blocks .contact_left {
+    padding: 2.5rem 0.87rem !important;
+  }
   .contacts .contact_block .contact_blocks .contact_right .contact_inf {
     flex-direction: column;
     align-items: center;
